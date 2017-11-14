@@ -1090,11 +1090,43 @@
 			width: 5em;
 		}
 
-		/* Custom 2018 */
+		/* 2018 Styles */
 
 		#announcement > .psa {
 			background: #e57373;
 			color: white;
 			padding: 1rem;
 			margin-bottom: 1rem;
+		}
+
+		/* Image Grid -- Responsive */
+		.image-grid {
+			display:  flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
+
+		.image-cell:first-child {
+			margin: none;
+		}
+
+		.image-grid .image-cell {
+			width: 100%;
+		}
+
+		.image-grid > .image-cell > p {
+			text-align: center;
+		}
+
+		/* Breakpoints */
+		@media screen and (min-width: 480px) {
+		  .image-grid .image-cell {
+		    width: calc(100% / 2);
+		  }
+		}
+
+		@media screen and (min-width: 768px) {
+		  .image-grid .image-cell {
+		    width: calc(100% / 3);
+		  }
 		}
