@@ -1119,7 +1119,7 @@
 		}
 
 		.image-grid > .image-cell:first-child {
-			margin-top: auto;
+			/* margin-top: auto; */
 		}
 
 		/* Breakpoints */
@@ -1133,4 +1133,8 @@
 		  .image-grid .image-cell {
 		    width: calc(100% / 3);
 		  }
+		}
+
+		#about p {
+			text-align: justify;
 		}
