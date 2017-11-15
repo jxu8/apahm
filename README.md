@@ -1,10 +1,12 @@
 ## CU APAHM (Asian Pacific American Heritage Month)
 
 Welcome to the website for CU APAHM!
+[http://www.columbia.edu/cu/apahm/(http://www.columbia.edu/cu/apahm/)
 
 Current maintainer: Ivy Chen
 
 Credits to **Anna Wen** for the 2017 site redesign.
+
 ---
 
 Twenty by HTML5 UP
