@@ -7,6 +7,10 @@ Current maintainer: Ivy Chen
 
 Credits to **Anna Wen** for the 2017 site redesign.
 
+### How to Update:
+- Request `apahm` unix group permissions from CUIT (requires advisor permission)
+- Optional: Set up SFTP between local and remote
+
 ---
 
 Twenty by HTML5 UP
