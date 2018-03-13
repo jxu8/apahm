@@ -724,16 +724,37 @@ properly.
 --------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
 
+   // === CUSTOM: mobile-small bgrids
+   /* block grids on mobile smaller screens */
+   .ms-bgrid-sixths [class*='column']   { width: 16.66667%; }
+   .ms-bgrid-quarters [class*='column'] { width: 25%; }
+   .ms-bgrid-thirds [class*='column']   { width: 33.33333%; }
+   .ms-bgrid-halves [class*='column']   { width: 50%; }
+
+   /* block grids left clearing */
+   .first { clear: none; }
+   .s-first { clear: left; }
+   .ms-first { clear: left; }
+
+   // === END CUSTOM
+}
+
+/* mobile narrow
+--------------------------------------------------------------- */
+@media only screen and (max-width: 460px) {
+
+   .row { width: auto; }
+
    .row {
-	   width: 460px;
-	   margin: 0 auto;
+    // width: 460px;
+    margin: 0 auto;
       padding: 0;
-	}
+    }
    .column, .columns {
-	   width: auto !important;
-	   float: none;
-	   margin-left: 0;
-	   margin-right: 0;
+    width: auto !important;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
       padding: 0 30px;
    }
    .row .row { width: auto; max-width: none; margin: 0 -30px; }
@@ -753,13 +774,6 @@ properly.
    .row .offset-9    { margin-left: 0%; }
    .row .offset-10   { margin-left: 0%; }
    .row .offset-11   { margin-left: 0%; }
-}
-
-/* mobile narrow
---------------------------------------------------------------- */
-@media only screen and (max-width: 460px) {
-
-   .row { width: auto; }
 
 }
 
@@ -976,6 +990,7 @@ header .scrolldown a:hover {
   background-color: #333;
 }
 
+// === CUSTOM
 /* hide toggle button */
 #nav-wrap > a.mobile-btn {
   display: none;
@@ -2122,13 +2137,14 @@ footer .social li:first-child {
   content: '';
 }
  #nav-wrap > a:after { top: 60%; }
-
+ // === CUSTOM
  /* toggle buttons */
 #nav-wrap:not( :target ) > a:first-of-type,
 #nav-wrap:target > a:last-of-type  {
    display: block;
 }
 
+// === CUSTOM
  /* hide menu panel */
  #nav-wrap ul#nav {
     height: auto;
@@ -2142,6 +2158,7 @@ footer .social li:first-child {
     right: 0;
  }
 
+ // === CUSTOM
  /* display menu panels */
 #nav-wrap:target > ul#nav	{
    display: block;

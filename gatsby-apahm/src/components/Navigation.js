@@ -23,8 +23,7 @@ class Navigation extends React.Component {
     render() {
         return(
             <nav id="nav-wrap" className={ this.state.isTop ? '' : 'isDown'}>
-                <a className="mobile-btn" href="#nav-wrap" />
-                <div className="nav-logo current">
+                <div className="nav-section nav-logo current">
                     <Link
                         activeClass="active"
                         href="#home"
@@ -108,6 +107,71 @@ class Navigation extends React.Component {
                         </Link>
                     </li>
                 </ul>
+                <a className="mobile-btn" href="#nav-wrap" />
+                <div className='nav-section mobile'>
+                    <ul id="nav" className="nav">
+                    <li>
+                        <Link
+                            activeClass="active"
+                            href="#about"
+                            to="about"
+                            spy={true}
+                            hashSpy={true}
+                            smooth={true}
+                            duration={500}>
+                            About
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            activeClass="active"
+                            href="board"
+                            to="board"
+                            spy={true}
+                            hashSpy={true}
+                            smooth={true}
+                            duration={500}>
+                            Board
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            activeClass="active"
+                            href="#portfolio"
+                            to="portfolio"
+                            spy={true}
+                            hashSpy={true}
+                            smooth={true}
+                            duration={500}>
+                            Portfolio
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            activeClass="active"
+                            href="#testimonials"
+                            to="testimonials"
+                            spy={true}
+                            hashSpy={true}
+                            smooth={true}
+                            duration={500}>
+                            Testimonials
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            activeClass="active"
+                            href="#footer"
+                            to="footer"
+                            spy={true}
+                            hashSpy={true}
+                            smooth={true}
+                            duration={500}>
+                            Contact
+                        </Link>
+                    </li>
+                </ul>
+                </div>
             </nav>
         )
     }

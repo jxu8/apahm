@@ -40,6 +40,7 @@ class Member extends React.Component {
                 <h5>{ this.props.name }</h5>
                 <h6>{ this.props.class }</h6>
                 <h6>{ this.props.position }</h6>
+                <h6 className='event'>{ this.props.event }</h6>
               </div>
             </div>
         )

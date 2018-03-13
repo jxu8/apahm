@@ -32,6 +32,7 @@ $NAV-LINK-SIZE: 1.625rem;
     .nav-logo {
         display: flex;
         align-items: center;
+        flex-grow: 1;
         padding: 1rem;
 
         img {
@@ -90,6 +91,11 @@ $NAV-LINK-SIZE: 1.625rem;
       -webkit-transform: scaleX(1);
       transform: scaleX(1);
     }
+
+    // mobile styles
+    .nav-section.mobile {
+        display: none;
+    }
 }
 
 /* ------------------------------------------------------------------ */
@@ -116,6 +122,13 @@ $NAV-LINK-SIZE: 1.625rem;
   ------------------------------------------------------------------ */
 #board {
     @extend #portfolio;
+    text-align: center;
+
+    #portfolio-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 
     h1 {
         font-size: 2rem;
@@ -132,6 +145,11 @@ $NAV-LINK-SIZE: 1.625rem;
         h5 {
             text-transform: uppercase;
             color: $SOFT-GREY;
+        }
+
+        .event {
+            color: #fff;
+            background-color: $APAHM-TEAL;
         }
     }
 }

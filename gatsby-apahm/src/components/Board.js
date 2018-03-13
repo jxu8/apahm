@@ -13,10 +13,11 @@ class Board extends React.Component {
     <div className='row'>
       <div className='twelve columns collapsed'>
         <h1>{this.props.teamname}</h1>
+        <p>{this.props.description}</p>
 
         <div
           id='portfolio-wrapper'
-          className='bgrid-quarters s-bgrid-thirds cf'
+          className='bgrid-quarters s-bgrid-thirds ms-bgrid-halves cf'
         >{this.props.children}</div>
       </div>
     </div>
