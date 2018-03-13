@@ -16,7 +16,7 @@ class Footer extends React.Component {
               <div className='twelve columns'>
                 <SocialLinks />
 
-                <p>For inquiries, email us at: <a title='cuapahm@gmail.com' href='cuapahm@gmail.com'>cuapahm@gmail.com</a></p>
+                <p>Interested in helping APAHM with events? Have exciting ideas about programming to share with us? Feel free to email us at: <a title='cuapahm@gmail.com' href='cuapahm@gmail.com'>cuapahm@gmail.com</a> and check us out on Facebook!</p>
 
                 <ul className='copyright'>
                   <li>&copy; Copyright CU APAHM 2018</li>

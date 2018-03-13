@@ -7,7 +7,11 @@ import ScrollDown from './ScrollDown'
 const Header = () => (
   <header id='home'>
     <Navigation />
-    <Banner />
+    <Banner
+        banner_title="CU APAHM"
+        banner_sub1="Columbia University"
+        banner_sub2="Asian Pacific American Heritage Month"
+        />
     <ScrollDown />
   </header>
 )

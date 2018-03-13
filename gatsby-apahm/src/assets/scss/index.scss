@@ -1,5 +1,5 @@
-$NAV-LINK-COLOR: #3b475f;
-$NAV-LINK-ALT-COLOR: #3fb8af;
+@import 'colors';
+@import 'main';
 
 /*
 =====================================================================
@@ -9,18 +9,11 @@ $NAV-LINK-ALT-COLOR: #3fb8af;
 
 Contents:
 a. Navigation
-b. Reset
-c. Default Styles
-   1. Basic
-   2. Typography
-   3. Links
-   4. Images
-   5. Buttons
-   6. Forms
-d. Grid
-e. Others
-   1. Clearing
-   2. Misc
+    * Added nav-logo
+    * Link underline animation on hover
+b. Banner
+    * Overlay
+c. Board & Members
 
 =====================================================================  */
 
@@ -28,8 +21,8 @@ e. Others
 /* a. Navigation
  ------------------------------------------------------------------ */
 
+$NAV-LINK-SIZE: 1.625rem;
 
-// Navigation
 #nav-wrap {
     display: flex;
     align-items: center;
@@ -46,19 +39,34 @@ e. Others
             height: auto;
             max-width: 48px;
         }
+
+        a {
+            font-weight: bold;
+            font-size: $NAV-LINK-SIZE;
+        }
     }
     &.isDown {
         box-shadow: 0 0 2px 2px #f1f1f1;
         background-color: hsla(0,0%,100%,.95);
+
+        ul#nav > li > a {
+            text-decoration: none;
+            color: $NAV-LINK-COLOR;
+        }
     }
 
     // Animate link underline on hover
     ul#nav > li > a {
         text-decoration: none;
-        color: $NAV-LINK-COLOR;
+        color: #fff;
+        font-size: $NAV-LINK-SIZE;
     }
 
     ul#nav > li > a:hover {
+        color: $NAV-LINK-ALT-COLOR;
+    }
+
+    ul#nav > li > a.active {
         color: $NAV-LINK-ALT-COLOR;
     }
 
@@ -81,5 +89,49 @@ e. Others
       visibility: visible;
       -webkit-transform: scaleX(1);
       transform: scaleX(1);
+    }
+}
+
+/* ------------------------------------------------------------------ */
+/* b. Banner
+ ------------------------------------------------------------------ */
+ .banner {
+
+     .banner-text {
+         h3 {
+             color: #fff;
+             text-transform: uppercase;
+             letter-spacing: 0.1em;
+         }
+
+         hr {
+             border-color: $APAHM-TEAL;
+         }
+     }
+ }
+
+
+ /* ------------------------------------------------------------------ */
+ /* c. Board & Members
+  ------------------------------------------------------------------ */
+#board {
+    @extend #portfolio;
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .item-wrap {
+        padding-bottom: 1rem;
+        text-align: center;
+
+        a {
+            margin-bottom: 1rem;
+        }
+
+        h5 {
+            text-transform: uppercase;
+            color: $SOFT-GREY;
+        }
     }
 }

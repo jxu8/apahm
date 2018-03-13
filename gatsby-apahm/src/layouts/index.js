@@ -20,7 +20,7 @@ const TemplateWrapper = ({ children }) => (
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
       <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Source+Sans+Pro"
+        href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Source+Sans+Pro|Roboto+Slab|Lato"
         rel="stylesheet"
       />
       <title>{siteMetadata.title}</title>

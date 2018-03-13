@@ -13,7 +13,9 @@ import Footer from '../components/Footer';
 const IndexPage = () => (
   <div>
     <Header />
-    <About />
+    <About
+        title='About APAHM'>
+    </About>
     <Resume />
     <Portfolio />
     <Testimonials />

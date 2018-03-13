@@ -1,13 +1,16 @@
-# CU APAHM Site
+# CU APAHM (Asian Pacific American Heritage Month)
 
-2018 APAHM site revamp.
+Welcome to the website for CU APAHM!
+[http://www.columbia.edu/cu/apahm/(http://www.columbia.edu/cu/apahm/)
 
-Built using GatsbyJS (React, GraphQL, Webpack) based on the `gatsby-starter-ceevee` theme.
+### How to Update:
+- Request `apahm` unix group permissions from CUIT (requires advisor permission)
+- Optional: Set up SFTP between local and remote
 
 ## Styles:
 * Display Font:
 * Text Font:
-
+* Built using GatsbyJS (React, GraphQL, Webpack) based on the `gatsby-starter-ceevee` theme.
 
 ## Additional Features:
 * Added Google Analytics tracking via `react-ga`
@@ -18,7 +21,12 @@ Built using GatsbyJS (React, GraphQL, Webpack) based on the `gatsby-starter-ceev
 * [Background filter](http://www.22bulbjungle.com/background-image-color-overlay-create-a-filter-look-with-css/)
 
 ## Contributors:
-* [Ivy Chen](www.linkedin.com/in/ivycny)
+* [Ivy Chen](www.linkedin.com/in/ivycny) - APAHM site 2018
+* Anna Wen - 2017
+
+## Influences:
+* [Cardiogr.am](https://cardiogr.am/)
+* [Bricolage Blog](https://github.com/KyleAMathews/blog) - for generating pages
 
 ## Base Theme Credits
 
