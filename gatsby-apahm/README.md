@@ -6,11 +6,11 @@ Built using GatsbyJS (React, GraphQL, Webpack) based on the `gatsby-starter-ceev
 
 ## Styles:
 * Display Font:
-* Text Font: 
+* Text Font:
 
 
 ## Additional Features:
-
+* Added Google Analytics tracking via `react-ga`
 * Smoothscroll using `react-scroll` plugin
 * Added pagination
 * Animated navigation [link underlines](http://tobiasahlin.com/blog/css-trick-animating-link-underlines/)
