@@ -62,13 +62,13 @@ class Navigation extends React.Component {
                     <li>
                         <Link
                             activeClass="active"
-                            href="#resume"
-                            to="resume"
+                            href="board"
+                            to="board"
                             spy={true}
                             hashSpy={true}
                             smooth={true}
                             duration={500}>
-                            Resume
+                            Board
                         </Link>
                     </li>
                     <li>

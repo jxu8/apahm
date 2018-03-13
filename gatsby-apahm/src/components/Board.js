@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaPlus, FaTag } from 'react-icons/lib/fa'
 import Member from '../components/Member'
-import * as Eboard from '../components/_eboard'
 
 class Board extends React.Component {
     constructor(props) {
@@ -18,17 +17,7 @@ class Board extends React.Component {
         <div
           id='portfolio-wrapper'
           className='bgrid-quarters s-bgrid-thirds cf'
-        >
-          <Member
-              href=''
-              title=''
-              alt='Ada Tam'
-              imgsrc={Eboard.Ada}
-              name='Ada Tam'
-              class='Barnard 2018'
-              position='Co-President'
-          />
-        </div>
+        >{this.props.children}</div>
       </div>
     </div>
   </section>
