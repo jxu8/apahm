@@ -15,7 +15,7 @@ class AltHeader extends React.Component {
             <header
                 id={this.props.page + '-header'}
                 style={{
-                    background-image: this.props.background
+                    'background-image': this.props.background
                 }}>
                 <Navigation />
                 <Banner
