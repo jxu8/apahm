@@ -1,21 +1,20 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from 'react'
+import Link from 'gatsby-link'
 
-import Header from '../components/Header';
-import About from '../components/About';
-import Resume from '../components/Resume';
-import Portfolio from '../components/Portfolio';
-import Testimonials from '../components/Testimonials';
-import Footer from '../components/Footer';
+import Header from '../components/Header'
+import About from '../components/About'
+import Navigation from '../components/Navigation'
+import Section from '../components/Section'
+import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 // Import board component
-import Board from '../components/Board';
+import Board from '../components/Board'
 // Import all (eboard + event chairs) members by First(Last), note last name is optional
 import * as BoardMembers from '../components/_boardmembers'
 import Member from '../components/Member'
 
 const BoardPage = () => (
   <div>
-    <Header />
     <Board
         className='eboard'
         teamname='Eboard 2017-2018'
@@ -171,7 +170,6 @@ const BoardPage = () => (
         teamname='Event Chairs 2017-2018'
         description='Each event chair spearheads his/her own event! From political panels to art exhibitions, from poetryslams to film screenings, each event chair is an integral part of making the month happen.'
     >
-    <hr />
         <Member
             href=''
             title=''
@@ -335,6 +333,6 @@ const BoardPage = () => (
     </Board>
     <Footer />
   </div>
-);
+)
 
-export default BoardPage;
+export default BoardPage
