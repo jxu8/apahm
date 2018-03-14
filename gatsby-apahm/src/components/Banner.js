@@ -16,7 +16,8 @@ class Banner extends React.Component {
                     </h3>
                     <h3>{this.props.banner_sub2}</h3>
                     <hr />
-                    <SocialLinks />
+                    {this.props.hasSocial &&
+                    <SocialLinks />}
                 </div>
             </div>
         )

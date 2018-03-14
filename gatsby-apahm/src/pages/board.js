@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import Header from '../components/Header'
+import AltHeader from '../components/AltHeader'
 import About from '../components/About'
 import Navigation from '../components/Navigation'
 import Section from '../components/Section'
@@ -13,8 +13,18 @@ import Board from '../components/Board'
 import * as BoardMembers from '../components/_boardmembers'
 import Member from '../components/Member'
 
+import bgimg from '../assets/images/apahm-2017.jpg'
+
 const BoardPage = () => (
   <div>
+    <AltHeader
+        page='board'
+        background={'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.13)),url(' + bgimg + ')'}
+        pageTitle='Meet the Board'
+        banner_sub1=''
+        banner_sub2=''
+    >
+    </AltHeader>
     <Board
         className='eboard'
         teamname='Eboard 2017-2018'

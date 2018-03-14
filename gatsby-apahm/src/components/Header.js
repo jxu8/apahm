@@ -11,6 +11,7 @@ const Header = () => (
         banner_title="CU APAHM"
         banner_sub1="Columbia University"
         banner_sub2="Asian Pacific American Heritage Month"
+        hasSocial={true}
         />
     <ScrollDown />
   </header>
