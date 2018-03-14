@@ -1,21 +1,63 @@
 import React from 'react'
 import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import apahmlogo from '../assets/images/apahm-logo.png'
+import {FaBars, FaClose} from 'react-icons/lib/fa'
 
 class Navigation extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             isTop: true,
+            show: false,
+            buttonName: 'mobile-btn'
         }
+
+        this.toggleButton = this.toggleButton.bind(this)
+        this.hide = this.hide.bind(this)
     }
 
     componentDidMount() {
         document.addEventListener('scroll', () => {
             const isTop = window.scrollY < 80
             if (isTop !== this.state.isTop) {
-                this.setState({ isTop })
+                this.setState({
+                    isTop: isTop,
+                    show: this.state.show,
+                    buttonName: this.state.buttonName
+                 })
             }
+        })
+    }
+
+    // Button toggling
+    // https://stackoverflow.com/questions/46203851/close-react-button-dropdown-menu-on-clicking-or-hovering-outside-of-menu-area
+    toggleButton() {
+        console.log(this.state)
+        if (this.state.show) {
+            this.setState({
+                isTop: this.state.isTop,
+                buttonName: 'mobile-btn',
+                show: false
+            })
+        } else {
+            this.setState({
+                isTop: this.state.isTop,
+                buttonName: 'mobile-btn closeButton',
+                show: true
+            })
+        }
+    }
+
+    hide(e) {
+        if (e && e.relatedTarget) {
+            e.relatedTarget.click()
+        }
+        console.log('hide')
+
+        this.setState({
+            isTop: this.state.isTop,
+            buttonName: 'mobile-btn',
+            show: false
         })
     }
 
@@ -45,7 +87,14 @@ class Navigation extends React.Component {
                         CU APAHM
                     </Link>
                 </div>
-                <ul id="nav" className="nav">
+                <Link
+                    className={this.state.buttonName}
+                    onClick={this.toggleButton}
+                    onBlur={this.hide}
+                    href="#nav-wrap"
+                    to="nav-wrap">{this.state.show ? 'Close' : 'Menu'}</Link>
+                <ul id="nav"
+                    className={this.state.show ? 'nav show' : 'nav'}>
                     <li>
                         <Link
                             activeClass="active"
@@ -64,7 +113,7 @@ class Navigation extends React.Component {
                             href="board"
                             to="board"
                             spy={true}
-                            hashSpy={true}
+                            hashSpy={false}
                             smooth={true}
                             duration={500}>
                             Board
@@ -107,71 +156,7 @@ class Navigation extends React.Component {
                         </Link>
                     </li>
                 </ul>
-                <a className="mobile-btn" href="#nav-wrap" />
-                <div className='nav-section mobile'>
-                    <ul id="nav" className="nav">
-                    <li>
-                        <Link
-                            activeClass="active"
-                            href="#about"
-                            to="about"
-                            spy={true}
-                            hashSpy={true}
-                            smooth={true}
-                            duration={500}>
-                            About
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            activeClass="active"
-                            href="board"
-                            to="board"
-                            spy={true}
-                            hashSpy={true}
-                            smooth={true}
-                            duration={500}>
-                            Board
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            activeClass="active"
-                            href="#portfolio"
-                            to="portfolio"
-                            spy={true}
-                            hashSpy={true}
-                            smooth={true}
-                            duration={500}>
-                            Portfolio
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            activeClass="active"
-                            href="#testimonials"
-                            to="testimonials"
-                            spy={true}
-                            hashSpy={true}
-                            smooth={true}
-                            duration={500}>
-                            Testimonials
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            activeClass="active"
-                            href="#footer"
-                            to="footer"
-                            spy={true}
-                            hashSpy={true}
-                            smooth={true}
-                            duration={500}>
-                            Contact
-                        </Link>
-                    </li>
-                </ul>
-                </div>
+
             </nav>
         )
     }

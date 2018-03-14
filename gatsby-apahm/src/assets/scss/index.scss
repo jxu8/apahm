@@ -48,7 +48,7 @@ $NAV-LINK-SIZE: 1.625rem;
     }
     &.isDown {
         box-shadow: 0 0 2px 2px #f1f1f1;
-        background-color: hsla(0,0%,100%,.95);
+        background-color: hsla(0,0%,100%,.95) !important;
 
         ul#nav > li > a {
             text-decoration: none;
@@ -92,9 +92,53 @@ $NAV-LINK-SIZE: 1.625rem;
       transform: scaleX(1);
     }
 
-    // mobile styles
-    .nav-section.mobile {
+    // mobile styles POPUP
+    .nav-section.popup {
+        // display: none;
+        position: absolute;
+        left: 10px;
+        top: 5px;
+        right: 10px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        pointer-events: none;
+        perspective: 2000px;
+    }
+}
+
+// MOD: :target -> .show
+@media only screen and (max-width: 767px) {
+    #nav-wrap > a.mobile-btn {
+        position: relative;
+        z-index: 1;
+    }
+
+    #nav-wrap > ul#nav {
+        position: absolute;
         display: none;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        flex-direction: column;
+        top: 1.625rem;
+        /* width: 60%; */
+        left: 2rem;
+        right: 2rem;
+        border-radius: 4px;
+
+        &.show {
+            display:flex;
+            margin: 0;
+        }
+
+        > li {
+            margin: 0;
+
+            a {
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -120,7 +164,7 @@ $NAV-LINK-SIZE: 1.625rem;
  /* ------------------------------------------------------------------ */
  /* c. Board & Members
   ------------------------------------------------------------------ */
-#board {
+.board {
     @extend #portfolio;
     text-align: center;
 
@@ -151,5 +195,9 @@ $NAV-LINK-SIZE: 1.625rem;
             color: #fff;
             background-color: $APAHM-TEAL;
         }
+    }
+
+    &:nth-child(3) {
+        padding-top: 0;
     }
 }

@@ -9,7 +9,7 @@ class Board extends React.Component {
 
     render() {
         return(
-  <section id='board'>
+  <section className='board'>
     <div className='row'>
       <div className='twelve columns collapsed'>
         <h1>{this.props.teamname}</h1>
