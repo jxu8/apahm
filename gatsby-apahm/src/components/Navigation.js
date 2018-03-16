@@ -61,12 +61,18 @@ class Navigation extends React.Component {
         })
     }
 
+    static defaultProps = {
+        notFill: true
+    }
 
     render() {
         return(
-            <nav id="nav-wrap" className={ this.state.isTop ? '' : 'isDown'}>
+            <nav
+                id="nav-wrap"
+                className={(this.state.isTop && this.props.notFill) ? '' : 'isDown'}
+                >
                 <div className="nav-section nav-logo current">
-                    <Link
+                    {/*<Link
                         activeClass="active"
                         href="#home"
                         to="home"
@@ -75,7 +81,7 @@ class Navigation extends React.Component {
                         smooth={true}
                         duration={500}>
                         <img src={apahmlogo}></img>
-                    </Link>
+                    </Link>*/}
                     <Link
                         activeClass="active"
                         href="#home"
@@ -84,7 +90,7 @@ class Navigation extends React.Component {
                         hashSpy={true}
                         smooth={true}
                         duration={500}>
-                        CU APAHM
+                        COLUMBIA | APAHM
                     </Link>
                 </div>
                 <Link

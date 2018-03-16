@@ -15,7 +15,7 @@ class Section extends React.Component {
 
     render() {
         return(
-            <section className={this.props.sectionClass}>
+            <section className={'section ' + this.props.sectionClass}>
                 <h1 className={this.props.sectionClass + '-title'}>
                 {this.props.headerTitle}</h1>
             <div className={this.props.sectionClass + '-content'}>

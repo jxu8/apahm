@@ -7,6 +7,7 @@ class ScrollDown extends React.Component {
         return(
             <p className='scrolldown'>
               <Link
+                  className='hvr-hang'
                   activeClass='active'
                   href='#about'
                   to='about'

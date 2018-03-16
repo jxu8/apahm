@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'main';
+@import 'hover';
 
 /*
 =====================================================================
@@ -14,6 +15,7 @@ a. Navigation
 b. Banner
     * Overlay
 c. Board & Members
+d. Sections
 
 =====================================================================  */
 
@@ -121,7 +123,8 @@ $NAV-LINK-SIZE: 1.625rem;
         flex-grow: 1;
         flex-wrap: wrap;
         flex-direction: column;
-        top: 1.625rem;
+        // top: 1.625rem;
+        top: 1rem;
         /* width: 60%; */
         left: 2rem;
         right: 2rem;
@@ -200,4 +203,18 @@ $NAV-LINK-SIZE: 1.625rem;
     &:nth-child(3) {
         padding-top: 0;
     }
+}
+
+/* ------------------------------------------------------------------ */
+/* d. Section
+ ------------------------------------------------------------------ */
+.section {
+    background: $WHITE-GREY;
+    text-align: center;
+    padding: 80px 0;
+    min-height: 500px;
+}
+
+#nav-wrap + section {
+    padding-top: 160px;
 }

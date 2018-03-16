@@ -942,7 +942,8 @@ header .social li a:hover {
 /* scrolldown link */
 header .scrolldown a {
     position: absolute;
-    bottom: 30px;
+    // bottom: 30px;
+    bottom: 80px;
     left: 50%;
     margin-left: -29px;
     color: #fff;
@@ -2111,10 +2112,11 @@ footer .social li:first-child {
     }
     #nav-wrap > a {
         color: #fff;
-        width: 48px;
-        height: 48px;
+        width: 36px;
+        height: 36px;
         text-align: left;
-        background-color: #CC5200;
+        // background-color: #CC5200;
+        background-color: transparent;
         position: relative;
         border: none;
         float: right;
@@ -2158,9 +2160,12 @@ footer .social li:first-child {
         position: absolute;
         background: #6772e5;
         border-radius: 1px;
-        left: 14px;
-        right: 14px;
-        top: 24px;
+        // left: 14px;
+        // right: 14px;
+        // top: 24px;
+        left: 25%;
+        right: 25%;
+        top: 50%;
         height: 3px;
         transform: rotate(45deg);
         transition: background .1s;
