@@ -104,13 +104,13 @@ class Navigation extends React.Component {
                     <li>
                         <Link
                             activeClass="active"
-                            href="#about"
-                            to="about"
+                            href="/"
+                            to="home"
                             spy={true}
                             hashSpy={true}
                             smooth={true}
                             duration={500}>
-                            About
+                            Main
                         </Link>
                     </li>
                     <li>
@@ -128,32 +128,20 @@ class Navigation extends React.Component {
                     <li>
                         <Link
                             activeClass="active"
-                            href="#portfolio"
-                            to="portfolio"
+                            href="archives"
+                            to="archives"
                             spy={true}
                             hashSpy={true}
                             smooth={true}
                             duration={500}>
-                            Portfolio
+                            Archives
                         </Link>
                     </li>
                     <li>
                         <Link
                             activeClass="active"
-                            href="#testimonials"
-                            to="testimonials"
-                            spy={true}
-                            hashSpy={true}
-                            smooth={true}
-                            duration={500}>
-                            Testimonials
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            activeClass="active"
-                            href="#footer"
-                            to="footer"
+                            href="contact"
+                            to="contact"
                             spy={true}
                             hashSpy={true}
                             smooth={true}

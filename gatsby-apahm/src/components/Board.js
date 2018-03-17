@@ -12,7 +12,7 @@ class Board extends React.Component {
   <section className='board'>
     <div className='row'>
       <div className='twelve columns collapsed'>
-        <h1>{this.props.teamname}</h1>
+        <h2>{this.props.teamname}</h2>
         <p>{this.props.description}</p>
 
         <div

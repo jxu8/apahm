@@ -2,10 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import AltHeader from '../components/AltHeader'
-import About from '../components/About'
-import Navigation from '../components/Navigation'
-import Section from '../components/Section'
-import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 // Import board component
 import Board from '../components/Board'

@@ -1,28 +1,35 @@
 import React from 'react'
 import Banner from '../components/Banner'
 /**
- * All-purpose section container
- * Sample use cases:
- *  - added information box at bottom of page
- *  - page header without banner
- * @type {Object}
- */
+* All-purpose section container
+* Sample use cases:
+*  - added information box at bottom of page
+*  - page header without banner
+* @type {Object}
+*/
 
 class Section extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+  constructor (props) {
+    super(props)
+  }
 
-    render() {
-        return(
-            <section className={'section ' + this.props.sectionClass}>
-                <h1 className={this.props.sectionClass + '-title'}>
-                {this.props.headerTitle}</h1>
-            <div className={this.props.sectionClass + '-content'}>
-                {this.props.children}</div>
-            </section>
-        )
-    }
+  render () {
+    return(
+      <section
+        id={this.props.id}
+        className={this.props.sectionClass ? 'section ' + this.props.sectionClass : 'section'}>
+        <div className='row'>
+          <h2 className={this.props.sectionClass ? this.props.sectionClass + '-title' : ''}>
+            {this.props.headerTitle}</h2>
+          <h3 className={this.props.sectionClass ? this.props.sectionClass + '-subtitle' : ''}>
+            {this.props.subtitle}</h3>
+          <div className={this.props.sectionClass + '-content columns twelve'}>
+            {this.props.children}
+          </div>
+        </div>
+      </section>
+    )
+  }
 }
 
 export default Section
