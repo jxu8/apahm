@@ -943,7 +943,7 @@ header .social li a:hover {
 header .scrolldown a {
     position: absolute;
     // bottom: 30px;
-    bottom: 80px;
+    bottom: 30%;
     left: 50%;
     margin-left: -29px;
     color: #fff;
@@ -1041,7 +1041,8 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #about {
-    background: #2b2b2b;
+    // background: #2b2b2b;
+    background: $OFF-WHITE;
     padding-top: 96px;
     padding-bottom: 66px;
     overflow: hidden;
@@ -1049,7 +1050,8 @@ ul#nav li.current a {
 
 #about a,
 #about a:visited {
-    color: #fff;
+    // color: #fff;
+    color: $BLUEBELL;
 }
 #about a:hover,
 #about a:focus {
@@ -1057,19 +1059,28 @@ ul#nav li.current a {
 }
 
 #about h2 {
-    font: bold 22px/30px $MAIN-FONT, sans-serif;
-    color: #fff;
+    font: bold 22px/30px $HEADER-FONT, sans-serif;
+    // color: #fff;
+    color: $GREY-BLUE;
     margin-bottom: 12px;
 }
 #about p {
     line-height: 30px;
-    color: #7a7a7a;
+    // color: #7a7a7a;
+    color: $GREY-BLUE;
+
+    // bold
+    b {
+        font-weight: bold;
+    }
 }
 #about .profile-pic {
     position: relative;
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
+    width: 160px;
+    // height: 120px;
+    height: auto;
+    max-width: 100%;
+    // border-radius: 100%;
 }
 #about .contact-details {
     width: 41.66667%;
@@ -1080,14 +1091,20 @@ ul#nav li.current a {
 }
 #about .main-col {
     padding-right: 5%;
+    text-align: justify;
 }
 #about .download .button {
     margin-top: 6px;
-    background: #444;
+    // background: #444;
+    background: transparent;
+    border: 2px solid $BLUEBELL;
 }
 #about .download .button:hover {
-    background: #fff;
-    color: #2b2b2b;
+    // background: #fff;
+    background: transparent;
+    // color: #2b2b2b;
+    color: $APAHM-TEAL;
+    border-color: $APAHM-TEAL;
 }
 #about .download .button i {
     margin-right: 15px;
@@ -1756,7 +1773,8 @@ background: #0D0D0D;
 /* ------------------------------------------------------------------ */
 
 #contact {
-    background: #191919;
+    // background: #191919;
+    background: $OFF-WHITE;
     padding-top: 96px;
     padding-bottom: 102px;
     color: #636363;
@@ -2052,8 +2070,8 @@ footer .social li:first-child {
     /* About Section
     ------------------------------------------------------------------- */
     #about .profile-pic {
-        width: 114px;
-        height: 114px;
+        width: 120px;
+        // height: 114px;
         margin-left: 12px;
     }
     #about .contact-details { width: 50%; }
@@ -2257,13 +2275,27 @@ footer .social li:first-child {
 
     /* About Section
     -------------------------------------------------------------------- */
-    #about .profile-pic { display: none; }
+    #about .profile-pic {
+        // display: none;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
     #about .download .button {
         width: 100%;
         text-align: center;
         padding: 15px 20px;
     }
-    #about .main-col { padding-right: 30px; }
+    #about .main-col {
+        // padding-right: 30px;
+        width: 100%;
+    }
+
+    // For small screen rows in about
+    #about .three.s-one {
+        width: 100%;
+        padding-bottom: 40px;
+    }
 
 
     /* Resume Section

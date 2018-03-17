@@ -16,6 +16,7 @@ b. Banner
     * Overlay
 c. Board & Members
 d. Sections
+e. Contact
 
 =====================================================================  */
 
@@ -23,7 +24,8 @@ d. Sections
 /* a. Navigation
  ------------------------------------------------------------------ */
 
-$NAV-LINK-SIZE: 1.625rem;
+$NAV-LINK-SIZE: 1.4rem;
+$NAV-LOGO-SIZE: 1.8rem;
 
 #nav-wrap {
     display: flex;
@@ -45,16 +47,18 @@ $NAV-LINK-SIZE: 1.625rem;
 
         a {
             font-weight: bold;
-            font-size: $NAV-LINK-SIZE;
+            font-size: $NAV-LOGO-SIZE;
         }
     }
     &.isDown {
-        box-shadow: 0 0 2px 2px #f1f1f1;
-        background-color: hsla(0,0%,100%,.95) !important;
+        // box-shadow: 0 0 2px 2px #f1f1f1;
+        // background-color: hsla(0,0%,100%,.95) !important;
+        background-color: #000 !important;
 
         ul#nav > li > a {
             text-decoration: none;
-            color: $NAV-LINK-COLOR;
+            // color: $NAV-LINK-COLOR;
+            color: #fff;
         }
     }
 
@@ -169,12 +173,18 @@ $NAV-LINK-SIZE: 1.625rem;
   ------------------------------------------------------------------ */
 .board {
     @extend #portfolio;
+    background: $OFF-WHITE;
     text-align: center;
 
     #portfolio-wrapper {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+    }
+
+    div > p {
+      // text-align: justify;
+      margin: 0 30px 30px 30px;
     }
 
     h1 {
@@ -217,4 +227,19 @@ $NAV-LINK-SIZE: 1.625rem;
 
 #nav-wrap + section {
     padding-top: 160px;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* e. Contact
+ ------------------------------------------------------------------ */
+#contact {
+  @extend #about;
+
+  a, a:visited {
+    color: $BLUEBELL;
+  }
+  a:hover {
+    color: $APAHM-TEAL;
+  }
 }
