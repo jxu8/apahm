@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'type';
 @import 'main';
 @import 'hover';
 
@@ -10,229 +11,245 @@
 
 Contents:
 a. Navigation
-    * Added nav-logo
-    * Link underline animation on hover
+* Added nav-logo
+* Link underline animation on hover
 b. Banner
-    * Overlay
+* Overlay
 c. Board & Members
 d. Sections
 e. Contact
+f. Opening on Index Page
 
 =====================================================================  */
 
 /* ------------------------------------------------------------------ */
 /* a. Navigation
- ------------------------------------------------------------------ */
+------------------------------------------------------------------ */
 
 $NAV-LINK-SIZE: 1.4rem;
 $NAV-LOGO-SIZE: 1.8rem;
 
 #nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+
+  .nav-logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
+    flex-grow: 1;
+    padding: 1rem;
 
-    .nav-logo {
-        display: flex;
-        align-items: center;
-        flex-grow: 1;
-        padding: 1rem;
-
-        img {
-            margin-right: 1rem;
-            height: auto;
-            max-width: 48px;
-        }
-
-        a {
-            font-weight: bold;
-            font-size: $NAV-LOGO-SIZE;
-        }
-    }
-    &.isDown {
-        // box-shadow: 0 0 2px 2px #f1f1f1;
-        // background-color: hsla(0,0%,100%,.95) !important;
-        background-color: #000 !important;
-
-        ul#nav > li > a {
-            text-decoration: none;
-            // color: $NAV-LINK-COLOR;
-            color: #fff;
-        }
+    img {
+      margin-right: 1rem;
+      height: auto;
+      max-width: 48px;
     }
 
-    // Animate link underline on hover
+    a {
+      font-weight: bold;
+      font-size: $NAV-LOGO-SIZE;
+    }
+  }
+  &.isDown {
+    // box-shadow: 0 0 2px 2px #f1f1f1;
+    // background-color: hsla(0,0%,100%,.95) !important;
+    background-color: #000 !important;
+
     ul#nav > li > a {
-        text-decoration: none;
-        color: #fff;
-        font-size: $NAV-LINK-SIZE;
+      text-decoration: none;
+      // color: $NAV-LINK-COLOR;
+      color: #fff;
     }
+  }
 
-    ul#nav > li > a:hover {
-        color: $NAV-LINK-ALT-COLOR;
-    }
+  // Animate link underline on hover
+  ul#nav > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: $NAV-LINK-SIZE;
+  }
 
-    ul#nav > li > a.active {
-        color: $NAV-LINK-ALT-COLOR;
-    }
+  ul#nav > li > a:hover {
+    color: $NAV-LINK-ALT-COLOR;
+  }
 
-    ul#nav > li > a:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: $NAV-LINK-ALT-COLOR;
-      visibility: hidden;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
-    }
+  ul#nav > li > a.active {
+    color: $NAV-LINK-ALT-COLOR;
+  }
 
-    ul#nav > li > a:hover:before {
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-    }
+  ul#nav > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $NAV-LINK-ALT-COLOR;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
 
-    // mobile styles POPUP
-    .nav-section.popup {
-        // display: none;
-        position: absolute;
-        left: 10px;
-        top: 5px;
-        right: 10px;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-        pointer-events: none;
-        perspective: 2000px;
-    }
+  ul#nav > li > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  // mobile styles POPUP
+  .nav-section.popup {
+    // display: none;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    right: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    pointer-events: none;
+    perspective: 2000px;
+  }
 }
 
 // MOD: :target -> .show
 @media only screen and (max-width: 767px) {
-    #nav-wrap > a.mobile-btn {
-        position: relative;
-        z-index: 1;
+  #nav-wrap > a.mobile-btn {
+    position: relative;
+    z-index: 1;
+  }
+
+  #nav-wrap > ul#nav {
+    position: absolute;
+    display: none;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    // top: 1.625rem;
+    top: 1rem;
+    /* width: 60%; */
+    left: 2rem;
+    right: 2rem;
+    border-radius: 4px;
+
+    &.show {
+      display:flex;
+      margin: 0;
     }
 
-    #nav-wrap > ul#nav {
-        position: absolute;
-        display: none;
-        flex-grow: 1;
-        flex-wrap: wrap;
-        flex-direction: column;
-        // top: 1.625rem;
-        top: 1rem;
-        /* width: 60%; */
-        left: 2rem;
-        right: 2rem;
-        border-radius: 4px;
+    > li {
+      margin: 0;
 
-        &.show {
-            display:flex;
-            margin: 0;
-        }
-
-        > li {
-            margin: 0;
-
-            a {
-                text-align: center;
-            }
-        }
+      a {
+        text-align: center;
+      }
     }
+  }
 }
 
 /* ------------------------------------------------------------------ */
 /* b. Banner
- ------------------------------------------------------------------ */
- .banner {
+------------------------------------------------------------------ */
+.banner {
 
-     .banner-text {
-         h3 {
-             color: #fff;
-             text-transform: uppercase;
-             letter-spacing: 0.1em;
-         }
+  .banner-text {
+    h3 {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
 
-         hr {
-             border-color: $APAHM-TEAL;
-         }
-     }
- }
+    hr {
+      border-color: $APAHM-TEAL;
+    }
+  }
+}
 
 
- /* ------------------------------------------------------------------ */
- /* c. Board & Members
-  ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* c. Board & Members
+------------------------------------------------------------------ */
 .board {
-    @extend #portfolio;
-    background: $OFF-WHITE;
+  @extend #portfolio;
+  background: $OFF-WHITE;
+  text-align: center;
+
+  #portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  div > p {
+    // text-align: justify;
+    margin: 0 30px 30px 30px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font: bold 22px/30px "Lovelo Black", sans-serif;
+    color: #3b475f;
+  }
+
+  // members
+  .item-wrap {
+    padding-bottom: 1rem;
     text-align: center;
 
-    #portfolio-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+    a {
+      margin-bottom: 1rem;
     }
 
-    div > p {
-      // text-align: justify;
-      margin: 0 30px 30px 30px;
+    h5 {
+      text-transform: uppercase;
+      color: $OFF-WHITE;
     }
 
-    h1 {
-        font-size: 2rem;
+    .event {
+      color: #fff;
+      background-color: $APAHM-TEAL;
     }
+  }
 
-    .item-wrap {
-        padding-bottom: 1rem;
-        text-align: center;
-
-        a {
-            margin-bottom: 1rem;
-        }
-
-        h5 {
-            text-transform: uppercase;
-            color: $SOFT-GREY;
-        }
-
-        .event {
-            color: #fff;
-            background-color: $APAHM-TEAL;
-        }
-    }
-
-    &:nth-child(3) {
-        padding-top: 0;
-    }
+  &:nth-child(3) {
+    padding-top: 0;
+  }
 }
 
 /* ------------------------------------------------------------------ */
 /* d. Section
- ------------------------------------------------------------------ */
+------------------------------------------------------------------ */
 .section {
-    background: $WHITE-GREY;
-    text-align: center;
-    padding: 80px 0;
-    min-height: 500px;
+  @extend #about;
+  background: #fff;
+  text-align: center;
+  padding: 80px 0;
+  min-height: 500px;
+
+  a, a:visited {
+    color: $BLUEBELL;
+  }
+  a:hover {
+    color: $APAHM-TEAL;
+  }
+
+  h3 {
+    font-family: 'Lovelo Black';
+  }
 }
 
 #nav-wrap + section {
-    padding-top: 160px;
+  padding-top: 160px;
 }
 
 
 /* ------------------------------------------------------------------ */
 /* e. Contact
- ------------------------------------------------------------------ */
+------------------------------------------------------------------ */
 #contact {
   @extend #about;
 
@@ -241,5 +258,59 @@ $NAV-LOGO-SIZE: 1.8rem;
   }
   a:hover {
     color: $APAHM-TEAL;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* f. Theme + Opening on Index Page
+------------------------------------------------------------------ */
+#theme {
+
+  img {
+    max-width: 80%;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  padding-bottom: 0;
+
+}
+
+#opening {
+  @extend #theme;
+}
+
+/* ------------------------------------------------------------------ */
+/* g. Notice
+------------------------------------------------------------------ */
+.notice {
+  border-radius: 2px;
+  color: #fff;
+  font: 'Lovelo Black';
+  max-width: 80%;
+  padding: 1rem;
+  background: $BLUEBELL;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+
+  h1,h2,h3,h4,h5,h6 {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* h. Sponsors
+------------------------------------------------------------------ */
+#sponsors {
+  .item-wrap {
+    padding: 0;
+
+    a {
+      margin: 0;
+    }
   }
 }
