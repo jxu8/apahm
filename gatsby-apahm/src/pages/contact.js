@@ -1,27 +1,30 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from 'react'
+import Link from 'gatsby-link'
 
-import Header from '../components/Header';
-import About from '../components/About';
-import Resume from '../components/Resume';
-import Portfolio from '../components/Portfolio';
-import Testimonials from '../components/Testimonials';
-import Footer from '../components/Footer';
-// Import board component
-import Board from '../components/Board';
-// Import all (eboard + event chairs) members by First(Last), note last name is optional
-import * as BoardMembers from '../components/_boardmembers'
-import Member from '../components/Member'
+import AltHeader from '../components/AltHeader'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
+
+import bgimg from '../assets/images/apahm-2017.jpg'
 
 class ContactPage extends React.Component {
-    render() {
-        return(
-          <div>
-              <Header />
-              <Footer />
-          </div>
-        )
-    }
+  render () {
+    return (
+      <div>
+        <AltHeader
+            page='contact'
+            background={'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.13)),url(' + bgimg + ')'}
+            pageTitle='Contact Us'
+            banner_sub1=''
+            banner_sub2=''
+        >
+        </AltHeader>
+        <Contact
+          title="Say Hello"/>
+        <Footer />
+      </div>
+    )
+  }
 }
 
 export default ContactPage
