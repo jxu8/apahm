@@ -1,7 +1,7 @@
 # CU APAHM (Asian Pacific American Heritage Month)
 
 Welcome to the website for CU APAHM!
-[http://www.columbia.edu/cu/apahm/(http://www.columbia.edu/cu/apahm/)
+[http://www.columbia.edu/cu/apahm/](http://www.columbia.edu/cu/apahm/)
 
 ## Styles:
 * Accent Color: APAHM teal
@@ -35,7 +35,7 @@ Welcome to the website for CU APAHM!
 7. `gatsby build` - creates optimized prod build
 8. `gatsby serve` - starts local HTML server for testing build
 
-```
+---
 
 ## Developer Walkthrough
 
@@ -48,7 +48,7 @@ Welcome to the website for CU APAHM!
 - Optional: Set up SFTP between local and remote
 
 ## Contributors:
-* [Ivy Chen](www.linkedin.com/in/ivycny) - APAHM site 2018
+* [Ivy Chen](www.linkedin.com/in/ivycny) - 2018
 * Anna Wen - 2017
 
 ## Influences:
