@@ -206,7 +206,13 @@ $NAV-LOGO-SIZE: 1.8rem;
 
     h5 {
       text-transform: uppercase;
-      color: $OFF-WHITE;
+      color: $GREY-BLUE;
+    }
+
+    .overlay {
+      h5 {
+        color: $OFF-WHITE;
+      }
     }
 
     .event {

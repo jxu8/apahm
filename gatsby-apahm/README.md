@@ -5,18 +5,23 @@ Welcome to the website for CU APAHM!
 
 ## Styles:
 * Accent Color: APAHM teal
-* Display Font: Roboto Slab
+* Display Font: Lovelo Black
 * Text Font: Source Sans Pro
 * Built using [GatsbyJS (React, GraphQL, Webpack)](https://www.gatsbyjs.org/docs/) based on the `gatsby-starter-ceevee` theme.
 
 ## Additional Features:
 * Added Google Analytics tracking via `react-ga`
 * Smoothscroll using `react-scroll` plugin
-* Added pagination
+* Added pagination using `gatsby-link`
+* Added page transitions based on [this discussion](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-page-transitions)
 * Animated navigation [link underlines](http://tobiasahlin.com/blog/css-trick-animating-link-underlines/)
 * Change [background on sticky navigation bar scroll](https://stackoverflow.com/questions/44612364/toggle-class-based-on-scroll-react-js)
 * [Background filter](http://www.22bulbjungle.com/background-image-color-overlay-create-a-filter-look-with-css/)
 * Modified block grids to have two columns on mobile small, and one column on mobile narrow
+
+## TODO:
+* Archives page using GraphQL to query data from Markdown files for each year
+* Update sponsors
 
 ## Quick Start
 

@@ -1,6 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
-
 import AltHeader from '../components/AltHeader'
 import Footer from '../components/Footer'
 // Import board component
@@ -12,8 +10,8 @@ import Member from '../components/Member'
 // IMPORTANT: must import, otherwise URL error
 import bgimg from '../assets/images/apahm-2017.jpg'
 
-const BoardPage = () => (
-  <div>
+const BoardPage = ({transition}) => (
+  <div style={transition && transition.style}>
     <AltHeader
         page='board'
         background={'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.13)),url(' + bgimg + ')'}

@@ -28,9 +28,9 @@ class Footer extends React.Component {
           </div>
 
           <div id='go-top'>
-            <a onClick={this.scrollToTop} title='Back to Top' href='#home'>
+            <Link onClick={this.scrollToTop} title='Back to Top'>
               <FaChevronCircleUp />
-            </a>
+            </Link>
           </div>
         </div>
       </footer>
@@ -38,4 +38,4 @@ class Footer extends React.Component {
   }
 }
 
-export default Footer;
+export default Footer

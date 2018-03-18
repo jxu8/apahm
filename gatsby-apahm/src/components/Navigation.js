@@ -1,7 +1,9 @@
 import React from 'react'
-import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link as SLink, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import apahmlogo from '../assets/images/apahm-logo.png'
 import {FaBars, FaClose} from 'react-icons/lib/fa'
+import Link from 'gatsby-link'
+
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -32,7 +34,6 @@ class Navigation extends React.Component {
   // Button toggling
   // https://stackoverflow.com/questions/46203851/close-react-button-dropdown-menu-on-clicking-or-hovering-outside-of-menu-area
   toggleButton() {
-    console.log(this.state)
     if (this.state.show) {
       this.setState({
         isTop: this.state.isTop,
@@ -68,78 +69,58 @@ class Navigation extends React.Component {
   render() {
     return(
       <nav
-        id="nav-wrap"
+        id='nav-wrap'
         className={(this.state.isTop && this.props.notFill) ? '' : 'isDown'}
         >
-        <div className="nav-section nav-logo current">
+        <div className='nav-section nav-logo current'>
           {/*<Link
-            activeClass="active"
-            href="#home"
-            to="home"
+            activeClass='active'
+            href='#home'
+            to='home'
             spy={true}
             hashSpy={true}
             smooth={true}
             duration={500}>
             <img src={apahmlogo}></img>
             </Link>*/}
-            <a
-              href="/"
+            <Link
+              to='/'
+            >
               COLUMBIA | APAHM
-            </a>
+            </Link>
           </div>
-          <Link
+          <SLink
             className={this.state.buttonName}
             onClick={this.toggleButton}
             onBlur={this.hide}
-            href="#nav-wrap"
-            to="nav-wrap">{this.state.show ? 'Close' : 'Menu'}</Link>
-          <ul id="nav"
+            to='nav-wrap'>{this.state.show ? 'Close' : 'Menu'}</SLink>
+          <ul id='nav'
             className={this.state.show ? 'nav show' : 'nav'}>
             <li>
               <Link
-                activeClass="active"
-                href="/"
-                to="home"
-                spy={true}
-                hashSpy={true}
-                smooth={true}
-                duration={500}>
+                activeClassName='active'
+                exact to='/'>
                 Main
               </Link>
             </li>
             <li>
               <Link
-                activeClass="active"
-                href="board"
-                to="board"
-                spy={true}
-                hashSpy={false}
-                smooth={true}
-                duration={500}>
+                activeClassName='active'
+                to='/board'>
                 Board
               </Link>
             </li>
             <li>
               <Link
-                activeClass="active"
-                href="archives"
-                to="archives"
-                spy={true}
-                hashSpy={true}
-                smooth={true}
-                duration={500}>
+                activeClassName='active'
+                to='/404'>
                 Archives
               </Link>
             </li>
             <li>
               <Link
-                activeClass="active"
-                href="contact"
-                to="contact"
-                spy={true}
-                hashSpy={true}
-                smooth={true}
-                duration={500}>
+                activeClassName='active'
+                to='/contact'>
                 Contact
               </Link>
             </li>

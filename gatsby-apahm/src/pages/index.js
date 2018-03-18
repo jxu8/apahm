@@ -12,8 +12,8 @@ import Sponsors from '../components/Sponsors'
 
 import openingBanner from '../assets/images/opening-2018.png'
 
-const IndexPage = () => (
-  <div>
+const IndexPage = ({transition}) => (
+  <div style={transition && transition.style}>
     <Header />
     <About
       title='About APAHM'>
