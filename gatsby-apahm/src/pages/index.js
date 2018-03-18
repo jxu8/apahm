@@ -25,7 +25,6 @@ const IndexPage = () => (
       <img src={openingBanner} />
       <p>Our 2018 theme is: <b>In(di)visible</b>. The Asian American identity is one that often goes unnoticed or unrecognized, falling into gray areas and between blurred lines. This invisibility stretches across media and politics, as Asians are often homogenized or overlooked. But by taking ownership of Asian-ness, originally just a category of otherness, this identity can be transformed into a source of unity and strength.</p>
       <Notice><h2>CALENDAR & EVENTS COMING SOON</h2></Notice>
-      <hr />
     </Section>
     <Section
       id='opening'

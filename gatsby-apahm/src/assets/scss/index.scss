@@ -280,6 +280,16 @@ $NAV-LOGO-SIZE: 1.8rem;
 
 #opening {
   @extend #theme;
+  background: $APAHM-TEAL;
+
+  h1,h2,h3,h4,h5,h6,p {
+    color: #fff;
+
+    a {
+      color: #fff;
+      border-bottom: 1px dotted #fff;
+    }
+  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -291,12 +301,13 @@ $NAV-LOGO-SIZE: 1.8rem;
   font: 'Lovelo Black';
   max-width: 80%;
   padding: 1rem;
-  background: $BLUEBELL;
+  // background: $BLUEBELL;
+  border: 4px solid $BLUEBELL;
   margin: 0 auto;
   margin-bottom: 3rem;
 
   h1,h2,h3,h4,h5,h6 {
-    color: #fff;
+    color: $BLUEBELL !important;
     padding: 0;
     margin: 0;
   }
