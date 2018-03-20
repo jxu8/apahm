@@ -138,14 +138,35 @@ $NAV-LOGO-SIZE: 1.8rem;
 
     &.show {
       display:flex;
+      flex-wrap: wrap;
+      flex-direction: column;
       margin: 0;
+      display: flex;
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 100%;
+      position: fixed;
+      justify-content: center;
     }
 
     > li {
       margin: 0;
 
       a {
+        font-size: 22px;
         text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #nav-wrap > ul#nav {
+    > li {
+      a {
+        font-size: 15px;
       }
     }
   }

@@ -9,7 +9,7 @@ const Header = () => (
     <Navigation />
     <Banner
         banner_title="CU APAHM"
-        banner_sub1="Columbia University"
+        banner_sub1="Columbia University + Barnard College"
         banner_sub2="Asian Pacific American Heritage Month"
         hasSocial={true}
         />

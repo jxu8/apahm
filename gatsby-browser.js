@@ -16,7 +16,7 @@ exports.onRouteUpdate = (state, page, pages) => {
   ReactGA.pageview(state.location.pathname)
 }
 
-const timeout = 250
+const timeout = 200
 const historyExitingEventType = `history::exiting`
 
 const getUserConfirmation = (pathname, callback) => {

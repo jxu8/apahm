@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { siteMetadata } from '../../gatsby-config'
 import './../assets/scss/main.scss'
 import './../assets/scss/index.scss'
+import favicon from '../assets/favicon.ico'
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -20,11 +21,11 @@ const TemplateWrapper = ({ children }) => (
         href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
       />
       <link
-        href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Source+Sans+Pro|Roboto+Slab|Lato'
+        href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Source+Sans+Pro|Roboto+Slab'
         rel='stylesheet'
       />
       <title>{siteMetadata.title}</title>
-      <link rel='icon' href='../assets/favicon.ico' type='image/x-icon'/>
+      <link rel='icon' href={favicon} type='image/x-icon' />
     </Helmet>
     {children()}
   </div>

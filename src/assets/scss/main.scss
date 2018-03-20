@@ -859,7 +859,8 @@ body {
 
 header {
     position: relative;
-    height: 800px;
+    // height: 800px;
+    height: 100vh;
     min-height: 500px;
     width: 100%;
     // background: #161415 url(../images/apahm-2017.jpg) no-repeat top center;
@@ -943,7 +944,7 @@ header .social li a:hover {
 header .scrolldown a {
     position: absolute;
     // bottom: 30px;
-    bottom: 30%;
+    bottom: 20%;
     left: 50%;
     margin-left: -29px;
     color: #fff;
@@ -1090,7 +1091,7 @@ ul#nav li.current a {
     padding-top: 6px;
 }
 #about .main-col {
-    padding-right: 5%;
+    // padding-right: 5%;
     text-align: justify;
 }
 #about .download .button {
@@ -2223,7 +2224,7 @@ footer .social li:first-child {
     #nav-wrap > ul#nav.show {
         display: block;
         padding: 30px 20px 48px 20px;
-        background: #1f2024;
+        background: rgba(31,32,36,0.91);
         margin: 0 30px;
         clear: both;
     }
