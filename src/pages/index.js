@@ -8,6 +8,14 @@ import Sponsors from '../components/Sponsors'
 
 import openingBanner from '../assets/images/opening-2018.png'
 
+/**
+ * Index Page contains:
+ * - About APAHM
+ * - Opening Ceremony Theme
+ * - Opening Ceremony Banner and link to event
+ * @param {[type]} transition [description]
+ */
+
 const IndexPage = ({transition}) => (
   <div style={transition && transition.style}>
     <Header />
@@ -29,7 +37,7 @@ const IndexPage = ({transition}) => (
       <h5>7-10:30pm @ Diana Event Oval</h5>
       <br />
       <p>Please join us for our Opening Ceremony, open to the public and members of the entire Columbia community for FREE! You will be treated to a delectable dinner from Gogo Curry and Malaysia Grill, enjoy exciting talented student performances, and hear from our guest speaker: <b><a href='https://www.youtube.com/channel/UCX6Kp2blW0IgpbE2VnjvhNA'>CHRISTINE HA</a></b>, Vietnamese-American chef, the first-ever blind contestant and winner of MasterChef season 3 with Gordon Ramsay.</p>
-      <Notice><h2>TICKETS COMING SOON</h2></Notice>
+      <Notice><h2>DETAILS & TICKETS</h2></Notice>
     </Section>
     <Sponsors
       description=''
