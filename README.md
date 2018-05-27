@@ -21,8 +21,8 @@ Welcome to the website for CU APAHM!
 
 ## TODO:
 * Archives page using GraphQL to query data from Markdown files for each year
-* Update sponsors
-* Add past members!
+* Add past members
+* Semi-automatic deployment
 
 ## Quick Start
 
@@ -32,7 +32,7 @@ Welcome to the website for CU APAHM!
 4. `cd apahm`
 5. `gatsby develop` - starts a hot-reloading environment accessible at `localhost:8000`
 6. Start editing the pages in `src/pages`. Saved changes will live reload in the browser.
-7. `gatsby build` - creates optimized prod build
+7. `gatsby build` - creates optimized prod build and static files to `public/`
 8. `gatsby serve` - starts local HTML server for testing build
 
 ---
@@ -46,6 +46,11 @@ Welcome to the website for CU APAHM!
 ### CUIT Site Permissions
 - Request `apahm` unix group permissions from CUIT (requires advisor permission)
 - Optional: Set up SFTP between local and remote
+
+### Deployment
+Deploy static files (in `/public/` directory) upon build.
+
+Server: `cunix.columbia.edu/www/data/cu/apahm`. Must have valid CUNIX credentials.
 
 ## Contributors:
 * [Ivy Chen](www.linkedin.com/in/ivycny) - 2018
