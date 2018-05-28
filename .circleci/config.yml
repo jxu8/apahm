@@ -28,10 +28,8 @@ jobs:
       - run:
           name: Install local dependencies
           command: npm install
-      - run: npm i -g gatsby-cli
       - run: gatsby build --prefix-paths
-      - run: node .circleci/deploy.js
-      - run: echo "Finished."
+      # - run: node .circleci/deploy.js
       # Cache local dependencies if they don't exist
       - save_cache:
           paths:
