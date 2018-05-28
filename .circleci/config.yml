@@ -13,8 +13,6 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
 
-    working_directory: ~/repo
-
     steps:
       # Checkout the code from branch into working area
       - checkout
@@ -44,6 +42,10 @@ jobs:
     steps:
       - restore_cache:
           key: v1-dependencies-{{ checksum "package.json" }}
+      - add_ssh_keys:
+          fingerprints:
+            - "c1:89:3d:24:79:85:30:e9:2b:fd:7c:8c:0c:e3:93:f8"
+      - run: ls -alF ~/.ssh/
       - run:
           name: scp deploy
           command: sudo scp -i ~/.ssh/id_apahm -r ~/apahm/public/. ic2389@cunix.columbia.edu:/www/data/cu/apahm/
