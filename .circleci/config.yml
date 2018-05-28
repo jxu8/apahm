@@ -15,31 +15,49 @@ jobs:
     working_directory: ~/repo
 
     steps:
+      # Checkout the code from branch into working area
       - checkout
-
       # Download and cache dependencies
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
-
-      - run: npm install
+      # Install project dependencies
+      - run:
+          name: Install local dependencies
+          command: npm install
+      - run: npm install gatsby-cli
       - run: gatsby build
-      # - run: node .circleci/deploy.js
+      - run: node .circleci/deploy.js
       - run: echo "Finished."
-
+      # Cache local dependencies if they don't exist
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+  deploy:
+    working_directory: ~/apahm
+    docker:
+      - image: circleci/node:7.10
+    steps:
+      - restore_cache:
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - add_ssh_keys:
+      - run:
+          name: scp deploy
+          command: sudo scp -r -P 21 ~/apahm/public/. ic2389@cunix.columbia.edu:/www/data/cu/apahm/
+
 workflows:
   version: 2
-  deploy:
+  build-and-deploy:
     jobs:
       - build:
-          filters:
-            branches:
-              only:
-                - master
+      - deploy:
+          requires:
+            - build
+        filters:
+          branches:
+            only:
+              - master

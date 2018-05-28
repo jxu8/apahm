@@ -9,4 +9,3 @@ node_modules
 # Build directory
 .DS_Store
 yarn-error.log
-public/
