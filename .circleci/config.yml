@@ -26,7 +26,7 @@ jobs:
 
       - run: npm install
       - run: gatsby build
-      - run: node .circleci/deploy.js
+      # - run: node .circleci/deploy.js
       - run: echo "Finished."
 
       - save_cache:
