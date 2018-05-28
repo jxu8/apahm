@@ -40,6 +40,9 @@ jobs:
             - "c1:89:3d:24:79:85:30:e9:2b:fd:7c:8c:0c:e3:93:f8"
             # - "08:ed:bf:f8:53:35:b2:6e:e5:90:c3:37:8b:92:f9:06"
       - run: ssh-keyscan -H $SSH_SERVER >> ~/.ssh/known_hosts
+      - run:
+          name: Delete /www/data/cu/apahm/ files
+          command: ssh ic2389@$SSH_SERVER:/www/data/cu/apahm 'rm -r *';
       - deploy:
           name: scp deploy
           command: scp -oStrictHostKeyChecking=no -r ~/apahm/public/. ic2389@$SSH_SERVER:/www/data/cu/apahm/

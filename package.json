@@ -5,6 +5,7 @@
   "author": "Ivy Chen <ivycny@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.145",
+    "gatsby-cli": "^1.1.50",
     "gatsby-link": "^1.6.39",
     "gatsby-module-loader": "^1.0.11",
     "gatsby-plugin-google-analytics": "^1.0.12",
