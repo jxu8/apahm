@@ -20,7 +20,7 @@ class Footer extends React.Component {
             <ul className='copyright'>
               <li>&copy; CU APAHM 2018</li>
               <li>
-                Developed with ❤ + ☕ by{' '}
+                Development: {' '}
                 <a href='https://github.com/ivychen/apahm'>Ivy Chen</a>
               </li>
             </ul>
