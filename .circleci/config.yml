@@ -6,7 +6,7 @@ jobs:
     working_directory: ~/apahm
     docker:
       # specify the version you desire here
-      - image: circleci/node:7.10
+      - image: circleci/node:latest
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -27,25 +27,26 @@ jobs:
       # Install project dependencies
       - run:
           name: Install local dependencies
-          command: npm install
-      - run: gatsby build --prefix-paths
+          command: yarn install
       # - run: node .circleci/deploy.js
       # Cache local dependencies if they don't exist
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-
+      - run:
+          name: Gatsby build site
+          command: yarn build
   deploy:
     working_directory: ~/apahm
     docker:
-      - image: circleci/node:7.10
+      - image: circleci/node:latest
     steps:
       - restore_cache:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
           name: scp deploy
-          command: sudo scp -r -P 21 ~/apahm/public/. ic2389@cunix.columbia.edu:/www/data/cu/apahm/
+          command: sudo scp -i ~/.ssh/id_apahm -r ~/apahm/public/. ic2389@cunix.columbia.edu:/www/data/cu/apahm/
 
 workflows:
   version: 2
