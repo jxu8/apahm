@@ -39,7 +39,7 @@ jobs:
           fingerprints:
             - "c1:89:3d:24:79:85:30:e9:2b:fd:7c:8c:0c:e3:93:f8"
       - run: ls -alF ~/.ssh/
-      - run: ssh-keyscan $SSH_SERVER >> ~/.ssh/known_hosts
+      - run: ssh-keyscan -H $SSH_SERVER >> ~/.ssh/known_hosts
       - deploy:
           name: scp deploy
           command: sudo scp -i ~/.ssh/id_rsa_c1893d24798530e92bfd7c8c0ce393f8 -r ~/apahm/public/. ic2389@$SSH_SERVER:/www/data/cu/apahm/
