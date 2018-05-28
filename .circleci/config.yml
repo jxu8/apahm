@@ -43,7 +43,7 @@ jobs:
       - run: ssh-keyscan -H $SSH_SERVER >> ~/.ssh/known_hosts
       - deploy:
           name: scp deploy
-          command: sudo scp -i ~/.ssh/id_rsa_c1893d24798530e92bfd7c8c0ce393f8 -r ~/apahm/public/. ic2389@$SSH_SERVER:/www/data/cu/apahm/
+          command: sudo scp -r ~/apahm/public/. ic2389@$SSH_SERVER:/www/data/cu/apahm/
 
 workflows:
   version: 2
