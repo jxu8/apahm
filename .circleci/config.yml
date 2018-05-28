@@ -35,30 +35,32 @@ jobs:
       - run:
           name: Gatsby build site
           command: yarn build
-  deploy:
-    working_directory: ~/apahm
-    docker:
-      - image: circleci/node:latest
-    steps:
-      - restore_cache:
-          key: v1-dependencies-{{ checksum "package.json" }}
       - add_ssh_keys:
           fingerprints:
             - "c1:89:3d:24:79:85:30:e9:2b:fd:7c:8c:0c:e3:93:f8"
       - run: ls -alF ~/.ssh/
-      - run:
+      - run: ssh-keyscan $SSH_SERVER >> ~/.ssh/known_hosts
+      - deploy:
           name: scp deploy
-          command: sudo scp -i ~/.ssh/id_apahm -r ~/apahm/public/. ic2389@cunix.columbia.edu:/www/data/cu/apahm/
+          command: sudo scp -i ~/.ssh/id_rsa_c1893d24798530e92bfd7c8c0ce393f8 -r ~/apahm/public/. ic2389@$SSH_SERVER:/www/data/cu/apahm/
 
 workflows:
   version: 2
-  build-and-deploy:
+  build:
     jobs:
-      - build
-      - deploy:
-          requires:
-            - build
+      - build:
           filters:
             branches:
               only:
                 - master
+
+  # build-and-deploy:
+  #   jobs:
+  #     - build
+  #     - deploy:
+  #         requires:
+  #           - build
+  #         filters:
+  #           branches:
+  #             only:
+  #               - master
