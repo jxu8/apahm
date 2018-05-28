@@ -1,0 +1,64 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-78911bbbdc1df71f5d3d.js",
+      "component---src-pages-index-js-78911bbbdc1df71f5d3d.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---archives": [
+      "path---archives-a0e39f21c11f6a62c5ab.js",
+      "path---archives-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-contact-js": [
+      "component---src-pages-contact-js-e2bef05a743f26a0bf50.js",
+      "component---src-pages-contact-js-e2bef05a743f26a0bf50.js.map"
+    ],
+    "component---src-pages-archives-js": [
+      "component---src-pages-archives-js-b34ddd229ae12594991f.js",
+      "component---src-pages-archives-js-b34ddd229ae12594991f.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-692df2e75dfd83b8899e.js",
+      "component---src-layouts-index-js-692df2e75dfd83b8899e.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---board": [
+      "path---board-a0e39f21c11f6a62c5ab.js",
+      "path---board-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-430bd2aa994e60fd384d.js",
+      "component---src-pages-404-js-430bd2aa994e60fd384d.js.map"
+    ],
+    "commons": [
+      "commons-52b977adac539249b349.js",
+      "commons-52b977adac539249b349.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---contact": [
+      "path---contact-a0e39f21c11f6a62c5ab.js",
+      "path---contact-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-fe9c1e62c6b5726382de.js",
+      "app-fe9c1e62c6b5726382de.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-board-js": [
+      "component---src-pages-board-js-6341d530aa190222cb3d.js",
+      "component---src-pages-board-js-6341d530aa190222cb3d.js.map"
+    ]
+  }
+}
