@@ -3,6 +3,7 @@
 version: 2
 jobs:
   build:
+    working_directory: ~/apahm
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
@@ -27,7 +28,7 @@ jobs:
       - run:
           name: Install local dependencies
           command: npm install
-      - run: npm install gatsby-cli
+      - run: npm i -g gatsby-cli
       - run: gatsby build
       - run: node .circleci/deploy.js
       - run: echo "Finished."
@@ -38,6 +39,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
   deploy:
+    working_directory: ~/apahm
     docker:
       - image: circleci/node:7.10
     steps:
