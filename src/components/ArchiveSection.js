@@ -1,6 +1,5 @@
 import React from 'react'
 import Banner from '../components/Banner'
-import Lightbox from 'react-images'
 
 /**
 * Archive section container

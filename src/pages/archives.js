@@ -5,7 +5,6 @@ import ArchiveSection from '../components/ArchiveSection'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import AltHeader from '../components/AltHeader'
-import Lightbox from 'react-images'
 import bgimg from '../assets/images/apahm-2017.jpg'
 
 class ArchivePage extends React.Component {

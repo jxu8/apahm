@@ -18,11 +18,10 @@ Welcome to the website for CU APAHM!
 * Change [background on sticky navigation bar scroll](https://stackoverflow.com/questions/44612364/toggle-class-based-on-scroll-react-js)
 * [Background filter](http://www.22bulbjungle.com/background-image-color-overlay-create-a-filter-look-with-css/)
 * Modified block grids to have two columns on mobile small, and one column on mobile narrow
+* Deployment on CircleCI (hacky, requires ssh/scp)
 
 ## TODO:
-* Archives page using GraphQL to query data from Markdown files for each year
 * Add past members
-* Semi-automatic deployment
 
 ## Quick Start
 
