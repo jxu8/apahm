@@ -8,7 +8,7 @@ import * as BoardMembers from '../components/_boardmembers'
 import Member from '../components/Member'
 
 // IMPORTANT: must import, otherwise URL error
-import bgimg from '../assets/images/apahm-2017.jpg'
+import bgimg from '../assets/images/apahm-2018-light.jpg'
 
 const BoardPage = ({transition}) => (
   <div style={transition && transition.style}>

@@ -112,7 +112,7 @@ class Navigation extends React.Component {
             <li>
               <Link
                 activeClassName='active'
-                to='/404'>
+                to='/archives'>
                 Archives
               </Link>
             </li>

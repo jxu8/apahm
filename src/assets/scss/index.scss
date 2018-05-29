@@ -19,6 +19,9 @@ c. Board & Members
 d. Sections
 e. Contact
 f. Opening on Index Page
+g. Notice
+h. Sponsors
+i. Archive Pges
 
 =====================================================================  */
 
@@ -356,6 +359,43 @@ $NAV-LOGO-SIZE: 1.8rem;
 
     a {
       margin: 0;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* i. Archive Pages
+------------------------------------------------------------------ */
+#archive {
+  section {
+    min-height: 300px;
+    text-align: left;
+    padding-bottom: 0;
+
+    columns {
+      padding: 0;
+    }
+
+    div[class$="-description"] {
+      padding-bottom: 1rem;
+      border-bottom: 1px $WHITE-GREY solid;
+      border-left: .5rem $APAHM-TEAL solid;
+      padding-left: 1rem;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    h4[class="-subtitle"], .subtitle {
+      color: $GREY-BLUE;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: 1rem;
+
+      strong {
+        font-weight: 700;
+      }
     }
   }
 }
