@@ -22,6 +22,7 @@ Welcome to the website for CU APAHM!
 
 ## TODO:
 * Add past members
+* Look into CMS systems ;-;
 
 ## Quick Start
 

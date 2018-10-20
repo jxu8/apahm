@@ -18,7 +18,7 @@ import openingBanner from '../assets/images/opening-2018.png'
 
 const IndexPage = ({transition}) => (
   <div style={transition && transition.style}>
-    <Header />
+    <Header/>
     <About
       title='About APAHM'>
     </About>
