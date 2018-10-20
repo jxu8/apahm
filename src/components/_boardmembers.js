@@ -1,6 +1,4 @@
 // Eboard Members + Senior Advisors
-import Ada from '../assets/images/board/Ada-Tam.jpg'
-import Alangoya from '../assets/images/board/Alangoya-Tezel.jpg'
 import Albert from '../assets/images/board/Albert-Zhang.jpg'
 import Alex from '../assets/images/board/Alexandra-Humair.jpg'
 import Alice from '../assets/images/board/Alice-Hu.jpg'
@@ -17,9 +15,7 @@ import Keki from '../assets/images/board/Keki-Takahara.jpg'
 import Liana from '../assets/images/board/Liana-He.jpg'
 import Ling from '../assets/images/board/Ling-Groccia.jpg'
 import Michelle from '../assets/images/board/Michelle-Lam.jpg'
-import Miyeon from '../assets/images/board/Miyeon-Kim.jpg'
 import Mona from '../assets/images/board/Mona-Villesik.jpg'
-import Randy from '../assets/images/board/Randy-Zhong.jpg'
 import Rebecca from '../assets/images/board/Rebecca-Wan.jpg'
 import Shinya from '../assets/images/board/Shinya-Kondo.jpg'
 import Vinay from '../assets/images/board/Vinay-Ramesh.jpg'
@@ -42,7 +38,6 @@ import EmilyL from '../assets/images/board/Emily-Li.jpg'
 // Event Chairs
 
 export {
-    Ada,
     Albert,
     Alex,
     Anisa,
@@ -61,7 +56,6 @@ export {
     Ling,
     Michelle,
     Mona,
-    Randy,
     Rebecca,
     Shinya,
     Vinay,
