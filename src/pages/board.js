@@ -332,6 +332,7 @@ const BoardPage = ({transition}) => (
       <Member
         href=''
         title=''
+        imgsrc={BoardMembers.Caitlyn}
         name='Caitlyn Chen'
         class='SEAS 2022'
         position='Event Chair'
