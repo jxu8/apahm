@@ -321,18 +321,14 @@ const BoardPage = ({transition}) => (
         class='SEAS 2021'
         position='Event Chair'
         />
-      {
-        /*
-        <Member
-          href=''
-          title=''
-          imgsrc={BoardMembers.EmilyL}
-          name='Emily Li'
-          class='CC 2021'
-          position='Event Chair'
-          />
-         */
-      }
+      <Member
+        href=''
+        title=''
+        imgsrc={BoardMembers.EmilyL}
+        name='Emily Li'
+        class='CC 2021'
+        position='Event Chair'
+        />
       <Member
         href=''
         title=''
