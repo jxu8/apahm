@@ -32,7 +32,7 @@ const BoardPage = ({transition}) => (
         imgsrc={BoardMembers.Anisa}
         name='Anisa Marhull'
         class='Barnard 2020'
-        position='Co-President'
+        position='President'
         />
       <Member
         href=''
@@ -41,7 +41,7 @@ const BoardPage = ({transition}) => (
         imgsrc={BoardMembers.Alex}
         name='Alex Humair'
         class='Barnard 2019'
-        position='Co-President'
+        position='Vice President'
         />
       <Member
         href=''
@@ -321,14 +321,18 @@ const BoardPage = ({transition}) => (
         class='SEAS 2021'
         position='Event Chair'
         />
-      <Member
-        href=''
-        title=''
-        imgsrc={BoardMembers.EmilyL}
-        name='Emily Li'
-        class='CC 2021'
-        position='Event Chair'
-        />
+      {
+        /*
+        <Member
+          href=''
+          title=''
+          imgsrc={BoardMembers.EmilyL}
+          name='Emily Li'
+          class='CC 2021'
+          position='Event Chair'
+          />
+         */
+      }
       <Member
         href=''
         title=''
