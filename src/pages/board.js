@@ -324,18 +324,18 @@ const BoardPage = ({transition}) => (
       <Member
         href=''
         title=''
-        imgsrc={BoardMembers.EmilyL}
-        name='Emily Li'
-        class='CC 2021'
+        imgsrc={BoardMembers.Caitlyn}
+        name='Caitlyn Chen'
+        class='SEAS 2022'
         position='Event Chair'
         />
       <Member
         href=''
         title=''
-        imgsrc={BoardMembers.Caitlyn}
-        name='Caitlyn Chen'
-        class='SEAS 2022'
-        position='Event Chair'
+        imgsrc={BoardMembers.EmilyL}
+        name='Emily Li'
+        class='CC 2021'
+        position='Member'
         />
     </Board>
     <Footer />
