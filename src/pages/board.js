@@ -37,15 +37,6 @@ const BoardPage = ({transition}) => (
       <Member
         href=''
         title=''
-        alt='Alex Humair'
-        imgsrc={BoardMembers.Alex}
-        name='Alex Humair'
-        class='Barnard 2019'
-        position='Vice President'
-        />
-      <Member
-        href=''
-        title=''
         alt='Vinay Ramesh'
         imgsrc={BoardMembers.Vinay}
         name='Vinay Ramesh'
@@ -268,6 +259,15 @@ const BoardPage = ({transition}) => (
       <Member
         href=''
         title=''
+        alt='Alex Humair'
+        imgsrc={BoardMembers.Alex}
+        name='Alex Humair'
+        class='Barnard 2019'
+        position='Event Chair'
+        />
+      <Member
+        href=''
+        title=''
         imgsrc={BoardMembers.Tracy}
         name='Tracy Chen'
         class='CC 2021'
@@ -328,14 +328,6 @@ const BoardPage = ({transition}) => (
         name='Caitlyn Chen'
         class='SEAS 2022'
         position='Event Chair'
-        />
-      <Member
-        href=''
-        title=''
-        imgsrc={BoardMembers.EmilyL}
-        name='Emily Li'
-        class='CC 2021'
-        position='Member'
         />
     </Board>
     <Footer />
