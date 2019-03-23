@@ -37,6 +37,15 @@ const BoardPage = ({transition}) => (
       <Member
         href=''
         title=''
+        alt='Alex Humair'
+        imgsrc={BoardMembers.Alex}
+        name='Alex Humair'
+        class='Barnard 2019'
+        position='Vice President'
+        />
+      <Member
+        href=''
+        title=''
         alt='Vinay Ramesh'
         imgsrc={BoardMembers.Vinay}
         name='Vinay Ramesh'
@@ -256,15 +265,6 @@ const BoardPage = ({transition}) => (
       teamname='Event Chairs 2018-2019'
       description='Each event chair spearheads his/her own event! From political panels to art exhibitions, from poetryslams to film screenings, each event chair is an integral part of making the month happen.'
       >
-      <Member
-        href=''
-        title=''
-        alt='Alex Humair'
-        imgsrc={BoardMembers.Alex}
-        name='Alex Humair'
-        class='Barnard 2019'
-        position='Event Chair'
-        />
       <Member
         href=''
         title=''
