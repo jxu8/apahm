@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from '../components/layout'
 import Header from '../components/Header'
 import About from '../components/About'
 import Footer from '../components/Footer'
@@ -17,6 +18,7 @@ import openingBanner from '../assets/images/opening-2018.png'
  */
 
 const IndexPage = ({transition}) => (
+  <Layout>
   <div style={transition && transition.style}>
     <Header/>
     <About
@@ -43,6 +45,7 @@ const IndexPage = ({transition}) => (
     />
     <Footer />
   </div>
+  </Layout>
 )
 
 export default IndexPage

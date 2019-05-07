@@ -2,7 +2,7 @@ import React from 'react'
 import { Link as SLink, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import apahmlogo from './../assets/images/apahm-logo.png'
 import {FaBars, FaClose} from 'react-icons/lib/fa'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
 
 class Navigation extends React.Component {

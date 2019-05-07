@@ -1,5 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Layout from '../components/layout'
+import { Link } from 'gatsby'
 
 import AltHeader from '../components/AltHeader'
 import Contact from '../components/Contact'
@@ -10,6 +11,7 @@ import bgimg from '../assets/images/apahm-2017.jpg'
 class ContactPage extends React.Component {
   render () {
     return (
+      <Layout>
       <div>
         <AltHeader
           page='contact'
@@ -23,6 +25,7 @@ class ContactPage extends React.Component {
           title="Say Hello"/>
         <Footer />
       </div>
+      </Layout>
     )
   }
 }

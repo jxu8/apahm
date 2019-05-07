@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Columbia University APAHM',
-    siteUrl: 'www.columbia.edu/cu/apahm/',
+    siteUrl: 'https://www.columbia.edu/cu/apahm',
     author: 'Ivy Chen',
     description: 'Columbia University APAHM (Asian Pacific American Heritage Month)'
   },

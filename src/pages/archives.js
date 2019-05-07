@@ -1,5 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Layout from '../components/layout'
+import { Link } from 'gatsby'
 import Section from '../components/Section'
 import ArchiveSection from '../components/ArchiveSection'
 import Navigation from '../components/Navigation'
@@ -58,6 +59,7 @@ class ArchivePage extends React.Component {
 
   render () {
     return(
+      <Layout>
       <div id="archive">
         <AltHeader
           page='archives'
@@ -270,6 +272,7 @@ class ArchivePage extends React.Component {
 
         <Footer />
       </div>
+      </Layout>
     )
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from '../components/layout'
 import AltHeader from '../components/AltHeader'
 import Footer from '../components/Footer'
 // Import board component
@@ -11,6 +12,7 @@ import Member from '../components/Member'
 import bgimg from '../assets/images/apahm-2018-light.jpg'
 
 const BoardPage = ({transition}) => (
+  <Layout>
   <div style={transition && transition.style}>
     <AltHeader
       page='board'
@@ -332,6 +334,7 @@ const BoardPage = ({transition}) => (
     </Board>
     <Footer />
   </div>
+  </Layout>
 )
 
 export default BoardPage

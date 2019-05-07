@@ -1,10 +1,12 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Layout from '../components/layout'
+import { Link } from 'gatsby'
 import Section from '../components/Section'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 
 const NotFoundPage = () => (
+  <Layout>
   <div>
     <Navigation
       notFill={false}
@@ -18,6 +20,7 @@ const NotFoundPage = () => (
     </Section>
     <Footer />
   </div>
+  </Layout>
 )
 
 export default NotFoundPage

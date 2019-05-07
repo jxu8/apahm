@@ -12,7 +12,7 @@ import getTransitionStyle from './src/utils/getTransitionStyle'
 ReactGA.initialize('UA-109714075-1')
 // ReactGA.pageview(window.location.pathname + window.location.search)
 
-exports.onRouteUpdate = (state, page, pages) => {
+export const onRouteUpdate = (state, page, pages) => {
   ReactGA.pageview(state.location.pathname)
 }
 
@@ -29,7 +29,7 @@ const getUserConfirmation = (pathname, callback) => {
 const history = createHistory({ getUserConfirmation })
 // block must return a string to conform
 history.block((location, action) => location.pathname)
-exports.replaceHistory = () => history
+export const replaceHistory = () => history
 
 class ReplaceComponentRenderer extends React.Component {
   constructor(props) {
@@ -90,7 +90,7 @@ class ReplaceComponentRenderer extends React.Component {
 }
 
 // eslint-disable-next-line react/display-name
-exports.replaceComponentRenderer = ({ props, loader }) => {
+export const replaceComponentRenderer = ({ props, loader }) => {
   if (props.layout) {
     return undefined
   }
