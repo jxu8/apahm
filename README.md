@@ -1,4 +1,4 @@
----# CU APAHM (Asian Pacific American Heritage Month)
+# CU APAHM (Asian Pacific American Heritage Month)
 
 Welcome to the website for CU APAHM!
 [http://www.columbia.edu/cu/apahm/](http://www.columbia.edu/cu/apahm/)
@@ -26,7 +26,7 @@ Welcome to the website for CU APAHM!
   - Deployment on CircleCI (hacky, requires ssh/scp)
 
 ## TODO:
-* Add past members
+* Add past members (???), although this may be overkill
 * Look into CMS systems ;-;
 
 ## Quick Start
@@ -58,12 +58,9 @@ Deploy static files (in `/public/` directory) upon build.
 Server: `cunix.columbia.edu/www/data/cu/apahm`. Must have valid CUNIX credentials.
 
 ## Contributors:
-* [Ivy Chen](www.linkedin.com/in/ivycny) - 2018
+* James Xu - 2020
+* [Ivy Chen](www.linkedin.com/in/ivycny) - 2018/2019
 * Anna Wen - 2017
-
-## Influences:
-* [Cardiogr.am](https://cardiogr.am/)
-* [Bricolage Blog](https://github.com/KyleAMathews/blog) - for generating pages
 
 ## Base Theme Credits
 
