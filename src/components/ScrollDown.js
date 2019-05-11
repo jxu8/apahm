@@ -1,10 +1,10 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { FaChevronCircleDown } from 'react-icons/lib/fa'
-import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 class ScrollDown extends React.Component {
-    render() {
-        return(
+    render () {
+        return (
             <p className='scrolldown'>
               <Link
                   className='hvr-hang'

@@ -3,10 +3,9 @@
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
-import React, {createElement} from 'react'
+import React, { createElement } from 'react'
 import ReactGA from 'react-ga'
 import { Transition } from 'react-transition-group'
-import createHistory from 'history/createBrowserHistory'
 import getTransitionStyle from './src/utils/getTransitionStyle'
 
 ReactGA.initialize('UA-109714075-1')
@@ -18,18 +17,6 @@ export const onRouteUpdate = (state, page, pages) => {
 
 const timeout = 200
 const historyExitingEventType = `history::exiting`
-
-const getUserConfirmation = (pathname, callback) => {
-  const event = new CustomEvent(historyExitingEventType, { detail: { pathname } })
-  window.dispatchEvent(event)
-  setTimeout(() => {
-    callback(true)
-  }, timeout)
-}
-const history = createHistory({ getUserConfirmation })
-// block must return a string to conform
-history.block((location, action) => location.pathname)
-export const replaceHistory = () => history
 
 class ReplaceComponentRenderer extends React.Component {
   constructor(props) {

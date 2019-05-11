@@ -1,5 +1,4 @@
 import React from 'react'
-import Banner from '../components/Banner'
 /**
 * All-purpose section container
 * Sample use cases:
@@ -9,12 +8,8 @@ import Banner from '../components/Banner'
 */
 
 class Section extends React.Component {
-  constructor (props) {
-    super(props)
-  }
-
   render () {
-    return(
+    return (
       <section
         id={this.props.id}
         className={this.props.sectionClass ? 'section ' + this.props.sectionClass : 'section'}>

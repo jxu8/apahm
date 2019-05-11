@@ -1,20 +1,15 @@
 import React from 'react'
-import Banner from '../components/Banner'
 
 /**
 * Archive section container
 * Sample use cases:
-*  - Archive information
+*  - Archive information with brief description of past APAHM themes and guest speakers
 * @type {Object}
 */
 
 class ArchiveSection extends React.Component {
-  constructor (props) {
-    super(props)
-  }
-
   render () {
-    return(
+    return (
       <section
         id={this.props.id}
         className={this.props.sectionClass ? 'section ' + this.props.sectionClass : 'section'}>

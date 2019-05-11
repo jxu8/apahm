@@ -1,9 +1,6 @@
 import React from 'react'
-import { Link as SLink, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import apahmlogo from './../assets/images/apahm-logo.png'
-import {FaBars, FaClose} from 'react-icons/lib/fa'
+import { Link as SLink } from 'react-scroll'
 import { Link } from 'gatsby'
-
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -65,8 +62,8 @@ class Navigation extends React.Component {
     notFill: true
   }
 
-  render() {
-    return(
+  render () {
+    return (
       <nav
         id='nav-wrap'
         className={(this.state.isTop && this.props.notFill) ? '' : 'isDown'}

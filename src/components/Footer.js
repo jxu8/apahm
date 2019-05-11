@@ -1,7 +1,7 @@
 import React from 'react'
 import SocialLinks from './SocialLinks'
 import { FaChevronCircleUp } from 'react-icons/lib/fa'
-import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { animateScroll as scroll } from 'react-scroll'
 
 class Footer extends React.Component {
   scrollToTop () {
@@ -18,7 +18,7 @@ class Footer extends React.Component {
               <a href='mailto:cuapahm@gmail.com'>cuapahm@gmail.com</a>
             </p>
             <ul className='copyright'>
-              <li>&copy; CU APAHM 2018 | Developed by <a href='https://github.com/ivychen/apahm'>Ivy Chen</a></li>
+              <li>&copy; CU APAHM 2019 | <a href='https://github.com/ivychen/apahm'>Source Code</a></li>
             </ul>
           </div>
 

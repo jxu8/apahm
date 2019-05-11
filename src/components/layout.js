@@ -1,12 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import Transition from '../components/Transition' // page transition
 import { siteMetadata } from '../../gatsby-config'
 import './../assets/scss/main.scss'
 import './../assets/scss/index.scss'
 import favicon from '../assets/favicon.ico'
 
-const TemplateWrapper = ({ children }) => (
+const Layout = ({ children, location }) => (
   <div>
     <Helmet>
       <meta name='author' description={siteMetadata.author} />
@@ -27,12 +27,14 @@ const TemplateWrapper = ({ children }) => (
       <title>{siteMetadata.title}</title>
       <link rel='icon' href={favicon} type='image/x-icon' />
     </Helmet>
-    {children()}
+    <div>
+      <Transition location={location}>{children}</Transition>
+    </div>
   </div>
 )
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func
+Layout.defaultProps = {
+  location: {}
 }
 
-export default TemplateWrapper
+export default Layout

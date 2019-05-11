@@ -7,6 +7,13 @@ module.exports = {
   },
   pathPrefix: '/cu/apahm',
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/layout.js`)
+      }
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -43,8 +50,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-link`
   ]
-};
+}

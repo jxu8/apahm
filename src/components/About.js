@@ -1,12 +1,7 @@
 import React from 'react'
-import { FaCloudDownload } from 'react-icons/lib/fa'
 import profilePic from './../assets/images/apahm-logo.png'
 
 class About extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render () {
     return (
       <section id='about'>
@@ -25,30 +20,6 @@ class About extends React.Component {
             <p>
                 We are inclusive of all racial, cultural, ethnic, gender, and sexual identities. Our members come from diverse backgrounds, and we unite to celebrate our mission.
             </p>
-            {/*<div className='row'>
-              <div className='columns contact-details'>
-                <h2>Contact Details</h2>
-                <p className='address'>
-                  <span>Jonathan Doe</span>
-                  <br />
-                  <span>
-                    1600 Amphitheatre Parkway
-                    <br /> Mountain View, CA 94043 US
-                  </span>
-                  <br />
-                  <span>(123)456-7890</span>
-                  <br />
-                  <span>anyone@website.com</span>
-                </p>
-              </div>
-              <div className='columns download'>
-                <p>
-                  <a href='#' className='button'>
-                    <FaCloudDownload /> Download Resume
-                  </a>
-                </p>
-              </div>
-            </div>*/}
           </div>
         </div>
       </section>
@@ -56,4 +27,4 @@ class About extends React.Component {
   }
 }
 
-      export default About
+export default About

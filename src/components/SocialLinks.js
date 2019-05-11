@@ -1,8 +1,6 @@
 import React from "react";
 import {
   FaFacebook,
-  FaGithub,
-  FaGooglePlus,
   FaInstagram,
   FaTwitter,
   FaEnvelopeO

@@ -19,9 +19,6 @@ import HKSSS from './../assets/images/sponsors/hksss.jpg'
 * @type {String}
 */
 class Sponsors extends React.Component {
-  constructor (props) {
-    super(props)
-  }
   render () {
     return (
       <section className='board' id='sponsors'>
@@ -32,77 +29,77 @@ class Sponsors extends React.Component {
             <div
               id='portfolio-wrapper'
               className='bgrid-quarters s-bgrid-thirds ms-bgrid-halves cf'
-              >
+            >
               <ImgCard
                 href='https://www.drinkbai.com/'
                 title=''
                 alt='Bai'
                 imgsrc={Bai}
                 name='Bai'
-                />
+              />
               <ImgCard
                 href='http://guayaki.com/'
                 title=''
                 alt='Guayaki'
                 imgsrc={Guayaki}
                 name='Guayaki Yerba Mate'
-                />
+              />
               <ImgCard
                 href='https://www.barpatea.com/'
                 title=''
                 alt='Bar Pa Tea'
                 imgsrc={Barpatea}
                 name='Bar Pa Tea'
-                />
+              />
               <ImgCard
                 href='https://www.drinkhint.com/'
                 title=''
                 alt='Hint Water'
                 imgsrc={Hint}
                 name='Hint Water'
-                />
+              />
               <ImgCard
                 href='https://www.theinfatuation.com/'
                 title=''
                 alt='The Infatuation'
                 imgsrc={TheInfatuation}
                 name='The Infatuation'
-                />
+              />
               <ImgCard
                 href='https://columbia.edu'
                 title=''
                 alt='Columbia University'
                 imgsrc={Columbia}
                 name='Columbia University'
-                />
+              />
               <ImgCard
                 href='https://barnard.edu'
                 title=''
                 alt='Barnard College'
                 imgsrc={Barnard}
                 name='Barnard College'
-                />
+              />
               <ImgCard
                 href='https://gs.columbia.edu'
                 title=''
                 alt='GS'
                 imgsrc={GS}
                 name='Columbia GS'
-                />
+              />
               <ImgCard
                 href='https://columbialambdas.org'
                 title=''
                 alt='Columbia Lambdas'
                 imgsrc={Lambda}
                 name='Columbia Lambdas'
-                />
+              />
               <ImgCard
                 href='http://www.columbia.edu/cu/hksss/'
                 title=''
                 alt='Columbia HKSSS'
                 imgsrc={HKSSS}
                 name='Columbia HKSSS'
-                />
+              />
             </div>
           </div>
         </div>

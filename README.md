@@ -1,4 +1,4 @@
-# CU APAHM (Asian Pacific American Heritage Month)
+---# CU APAHM (Asian Pacific American Heritage Month)
 
 Welcome to the website for CU APAHM!
 [http://www.columbia.edu/cu/apahm/](http://www.columbia.edu/cu/apahm/)
@@ -7,18 +7,23 @@ Welcome to the website for CU APAHM!
 * Accent Color: APAHM teal
 * Display Font: Lovelo Black
 * Text Font: Source Sans Pro
-* Built using [GatsbyJS (React, GraphQL, Webpack)](https://www.gatsbyjs.org/docs/) based on the `gatsby-starter-ceevee` theme.
+* Built using [GatsbyJS (React, GraphQL, Webpack)](https://www.gatsbyjs.org/docs/) based on the `gatsby-starter-ceevee` (Gatbsy v1) theme.
 
-## Additional Features:
-* Added Google Analytics tracking via `react-ga`
-* Smoothscroll using `react-scroll` plugin
-* Added pagination using `gatsby-link`
-* Added page transitions based on [this discussion](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-page-transitions)
-* Animated navigation [link underlines](http://tobiasahlin.com/blog/css-trick-animating-link-underlines/)
-* Change [background on sticky navigation bar scroll](https://stackoverflow.com/questions/44612364/toggle-class-based-on-scroll-react-js)
-* [Background filter](http://www.22bulbjungle.com/background-image-color-overlay-create-a-filter-look-with-css/)
-* Modified block grids to have two columns on mobile small, and one column on mobile narrow
-* Deployment on CircleCI (hacky, requires ssh/scp)
+## Changelog:
+* 2018-2019: Gatsby v2
+  - Required to update to Gatsby v2 and upgrade peer dependencies as per [Migrating from v1 to v2 doc](https://www.gatsbyjs.org/docs/migrating-from-v1-to-v2/)
+  - Removed unnecessary `gatsby-starter-ceevee` components
+  - Ran source code through ESLint
+* 2017-2018: Gatbsy v1
+  - Added Google Analytics tracking via `react-ga`
+  - Smoothscroll using `react-scroll` plugin
+  - Added pagination using `gatsby-link`
+  - Added page transitions based on [this discussion](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-page-transitions)
+  - Animated navigation [link underlines](http://tobiasahlin.com/blog/css-trick-animating-link-underlines/)
+  - Change [background on sticky navigation bar scroll](https://stackoverflow.com/questions/44612364/toggle-class-based-on-scroll-react-js)
+  - [Background filter](http://www.22bulbjungle.com/background-image-color-overlay-create-a-filter-look-with-css/)
+  - Modified block grids to have two columns on mobile small, and one column on mobile narrow
+  - Deployment on CircleCI (hacky, requires ssh/scp)
 
 ## TODO:
 * Add past members

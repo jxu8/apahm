@@ -1,9 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { Link } from 'gatsby'
-import Section from '../components/Section'
 import ArchiveSection from '../components/ArchiveSection'
-import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import AltHeader from '../components/AltHeader'
 import bgimg from '../assets/images/apahm-2017.jpg'
@@ -58,7 +55,7 @@ class ArchivePage extends React.Component {
   }
 
   render () {
-    return(
+    return (
       <Layout>
       <div id="archive">
         <AltHeader

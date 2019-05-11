@@ -3,11 +3,6 @@ import Navigation from './Navigation'
 import Banner from './Banner'
 
 class AltHeader extends React.Component {
-
-  constructor (props) {
-    super(props)
-  }
-
   render () {
     return (
       <header

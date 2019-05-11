@@ -1,10 +1,10 @@
 import React from 'react'
+/**
+ * Contact information for APAHM
+ * @extends React
+ */
 
 class Contact extends React.Component {
-  constructor (props) {
-    super(props)
-  }
-
   render () {
     return (
       <section id='contact'>
