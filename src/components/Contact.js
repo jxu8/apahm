@@ -14,7 +14,7 @@ class Contact extends React.Component {
             <p>
               Interested in helping APAHM with events? Have exciting ideas about programming to share with us?
               <br />
-              Get in touch with us at: <b><a href='mailto:cuapahm@columbia.edu'>cuapahm@gmail.com</a></b> and check us out on <a href='https://www.facebook.com/ColumbiaAPAHM/'>Facebook</a>!
+              Get in touch with us at: <b><a href='mailto:cuapahm@columbia.edu'>cuapahm@gmail.com</a></b> and check us out on <b><a href='https://www.facebook.com/ColumbiaAPAHM/'>Facebook</a></b>! See what the APAHM board is up to on <b><a href='https://www.instagram.com/cuapahm/'>Instagram</a></b>!
             </p>
           </div>
         </div>

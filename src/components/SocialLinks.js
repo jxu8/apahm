@@ -3,7 +3,8 @@ import {
   FaFacebook,
   FaInstagram,
   FaTwitter,
-  FaEnvelopeO
+  FaEnvelopeO,
+  FaLinkedin
 } from "react-icons/lib/fa";
 // https://gorangajic.github.io/react-icons/fa.html
 
@@ -15,13 +16,18 @@ const SocialLinks = () => (
       </a>
     </li>
     <li>
+      <a href="https://www.instagram.com/cuapahm/?hl=en">
+        <FaInstagram />
+      </a>
+    </li>
+    <li>
       <a href="https://twitter.com/cuapahm">
         <FaTwitter />
       </a>
     </li>
     <li>
-      <a href="https://www.instagram.com/cuapahm/?hl=en">
-        <FaInstagram />
+      <a href='https://www.linkedin.com/company/cuapahm'>
+        <FaLinkedin />
       </a>
     </li>
     <li>
