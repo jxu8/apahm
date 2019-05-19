@@ -26,7 +26,6 @@ Welcome to the website for CU APAHM!
   - Deployment on CircleCI (hacky, requires ssh/scp)
 
 ## TODO:
-* Add past members (???), although this may be overkill
 * Look into CMS systems ;-;
 
 ## Quick Start
@@ -35,10 +34,11 @@ Welcome to the website for CU APAHM!
 2. Ensure node/npm installed on machine
 3. Install gatsby command line interface: `npm install --global gatsby-cli`
 4. `cd apahm`
-5. `gatsby develop` - starts a hot-reloading environment accessible at `localhost:8000`
-6. Start editing the pages in `src/pages`. Saved changes will live reload in the browser.
-7. `gatsby build` - creates optimized prod build and static files to `public/`
-8. `gatsby serve` - starts local HTML server for testing build
+5. `npm install`
+6. `gatsby develop` - starts a hot-reloading environment accessible at `localhost:8000`
+7. Start editing the pages in `src/pages`. Saved changes will live reload in the browser.
+8. `gatsby build` - creates optimized prod build and static files to `public/`
+9. `gatsby serve` - starts local HTML server for testing build
 
 ---
 
@@ -46,10 +46,10 @@ Welcome to the website for CU APAHM!
 
 ### Updating Board Members
 
-* To maintain separation of concerns, we create two underscore-prefixed components `_boardmembers.js` and `_pastmembers.js` that import the image urls for all Current and Past board members. We use these links in other components (namely `Board` and the `board.js` page) as [exported imports](https://stackoverflow.com/questions/37200080/how-to-export-imported-object-in-es6)
+* Two files (`_boardmembers.js` and `_pastmembers.js`) are used to import the image urls for all Current and Past board members and export them as components. We [import these exported components](https://stackoverflow.com/questions/37200080/how-to-export-imported-object-in-es6) in `board.js` to display board member images.
 
 ### CUIT Site Permissions
-- Request `apahm` unix group permissions from CUIT (requires advisor permission)
+- Request `apahm` unix group permissions from CUIT (requires CU advisor permission)
 - Optional: Set up SFTP between local and remote
 
 ### Deployment
