@@ -42,10 +42,10 @@ jobs:
       - run: ssh-keyscan -H $SSH_SERVER >> ~/.ssh/known_hosts
       - run:
           name: Delete /www/data/cu/apahm/ files
-          command: ssh ic2389@$SSH_SERVER 'cd /www/data/cu/apahm && rm -r *';
+          command: ssh $UNI@$SSH_SERVER 'cd $APAHM_DIR && rm -r *';
       - deploy:
           name: SCP deploy from public/ to /www/data/cu/apahm
-          command: scp -oStrictHostKeyChecking=no -r ~/apahm/public/. ic2389@$SSH_SERVER:/www/data/cu/apahm/
+          command: scp -oStrictHostKeyChecking=no -r ~/apahm/public/. $UNI@$SSH_SERVER:$APAHM_DIR
 
 workflows:
   version: 2
