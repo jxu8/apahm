@@ -302,7 +302,7 @@ const BoardPage = ({ transition }) => (
           href=''
           title=''
           imgsrc={BoardMembers.Carmen}
-          name='Carmen Chung'
+          name='Carmen Cheung'
           class='GS 2020'
           position='Event Chair'
         />
