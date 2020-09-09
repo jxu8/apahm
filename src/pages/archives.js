@@ -70,6 +70,88 @@ class ArchivePage extends React.Component {
         {/* === BEGIN ARCHIVE THEMES IN REVERSE CHRONOLOGICAL ORDER === */}
 
         <ArchiveSection
+          year="2020"
+          theme="Amplify"
+          subtitle=""
+          description="In light of COVID-19, we are unfortunately no longer able to bring forth physical events we had planned for APAHM and must resort to an online format to celebrate the month. We see Amplify as a continuation of last year’s theme, Commotion, that encouraged individuals to break stereotypes surrounding the API community and to freely express their emotions, sexuality, passions and personalities. With Amplify, we hope to continue this change in tide and to magnify the positive changes we have made for our community in fields not limited to politics, film and media. As we present our events to you digitally throughout the month of April, we hope you join us to amplify the voices within our community.">
+          
+          <p><strong>Board</strong>:</p>
+
+          <ul>
+          <li>Presidents: Shinya Kondo, Keki Takahara</li>
+
+          <li>Opening Ceremony Co-Heads: Carmen Cheung, Sumer Drall</li>
+
+          <li>Treasurers: Julia Angkeow, Andrew Huen</li>
+
+          <li>Secretary/Webmaster: James Xu</li>
+
+          <li>Graphic Design Chair: Shannon Hui</li>
+
+          <li>Marketing Chair: Jady Tian</li>
+
+          <li>Senior Advisor: Tracy Chen, Claudia Chung, Alex Humair, Ling Groccia, Yuki Mitsuda, Rebecca Wan</li>
+
+          <li>Event Chairs: Sam Azanza, Eric Che, Grace Ding, Sydnie Ito, Sophia Jao, Cheif Joseph Lynch, Janice Ng, Isaac Quiles,  Alyssa Sales, Annie Tan, Rhe-Anne Tan, Karuna Vikram, Jessie Zhang</li>
+
+          <li>Faculty Advisors: Ashley Astwood, Alison Jackson, Jennifer Nival</li>
+          </ul>
+          
+        </ArchiveSection>
+
+        <ArchiveSection
+          year="2019"
+          theme="Commotion"
+          subtitle=""
+          description="Commotion evokes action, noise, and disruption, and we believe that is precisely how pan-Asian identity should be brought out of the periphery into the limelight. Following a string of successful films and the increased attention to Asian-American public figures in recent months, this year APAHM wants to shake up the everyday awareness and expression of pan-Asian culture, identity, and diversity, in all fields and industries. Rather than remain passive, sidelined, and silent, we want to celebrate, to be loud – to cause a commotion."
+        >
+          <p><strong>Opening Ceremony</strong>: <strong>Min Jin Lee</strong>is the award-winning author of National Book Award finalist and winner of the Medici Book Club Prize, Pachinko (2017), as well as national bestseller Free Food for Millionaires (2007).</p>
+          <p><strong>Closing Ceremony</strong>: <strong>Diasporic Representations of Asians + Gender (D.R.A.G.)</strong>featuring Indian performing artist Alok Vaid-Menon and drag queen Yuhua Hamasaki, who performed on the tenth season of RuPaul’s Drag Race. </p>
+
+          <p><strong>Board</strong>:</p>
+
+          <ul>
+          <li>Presidents: Anisa Marhull</li>
+
+          <li>Vice President: Alex Humair</li>
+
+          <li>Opening Ceremony Co-Heads: Wan Yi Lee, Vinay Ramesh</li>
+
+          <li>Treasurers: Keki Takahara, Jady Tian</li>
+
+          <li>Secretary: Ling Groccia</li>
+
+          <li>Social Chair: Claudia Chung</li>
+
+          <li>Graphic Design Chair: Jimin Ko</li>
+
+          <li>Marketing Chair: Yuki Mitsuda, Mona Villesvik</li>
+
+          <li>Webmaster: Ivy Chen</li>
+
+          <li>Senior Advisor: Ankita Acharya, Vincent Gu, Liana He, Alice Hu, Erika Inoue, Emily Jin, Shinya Kondo, Michelle Lam, Yi Jun Lim, Haejin Park, Rebecca Wan, Gregory Yap, Yilun Ying, Albert Zhang</li>
+
+          <li>Event Chairs: Julia Angkeow, Caitlyn Chen, Carmen Cheung, Tracy Chen, Sumer Drall, Shannon Hui, Andrew Huen, James Xu</li>
+
+          <li>Faculty Advisors: Melinda Aquino</li>
+          </ul>
+
+          <p><strong>Performers</strong>:</p>
+
+          <ul>
+          <li>Columbia University Lion Dance</li>
+
+          <li>Columbia Raas</li>
+
+          <li>Columbia Wushu</li>
+
+          <li>Columbia Taiko</li>
+
+          </ul>
+        </ArchiveSection>
+
+
+        <ArchiveSection
           year="2018"
           theme="In(di)visible"
           subtitle=""

@@ -23,44 +23,35 @@ const BoardPage = ({ transition }) => (
       />
       <Board
         className='eboard'
-        teamname='Eboard 2018-2019'
+        teamname='Eboard 2020-2021'
         description=''
       >
         <Member
           href=''
           title=''
-          alt='Anisa Marhull'
-          imgsrc={BoardMembers.Anisa}
-          name='Anisa Marhull'
-          class='Barnard 2020'
-          position='President'
+          alt='Ling Groccia'
+          imgsrc={BoardMembers.Ling}
+          name='Ling Groccia'
+          class='Barnard 2021'
+          position='Co-President'
         />
         <Member
           href=''
           title=''
-          alt='Alex Humair'
-          imgsrc={BoardMembers.Alex}
-          name='Alex Humair'
-          class='Barnard 2019'
-          position='Vice President'
+          alt='Julia Angkeow'
+          imgsrc={BoardMembers.Julia}
+          name='Julia Angkeow'
+          class='CC 2022'
+          position='Co-President'
         />
         <Member
           href=''
           title=''
-          alt='Vinay Ramesh'
-          imgsrc={BoardMembers.Vinay}
-          name='Vinay Ramesh'
-          class='SEAS 2019'
-          position='Opening Ceremony Co-Chair'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Wan Yii Lee'
-          imgsrc={BoardMembers.Wanyii}
-          name='Wan Yii Lee'
-          class='GS 2019'
-          position='Opening Ceremony Co-Chair'
+          alt='Jessie Zhang'
+          imgsrc={BoardMembers.Jessie}
+          name='Jessie Zhang'
+          class='Barnard 2023'
+          position='Secretary'
         />
         <Member
           href=''
@@ -69,26 +60,76 @@ const BoardPage = ({ transition }) => (
           imgsrc={BoardMembers.Jady}
           name='Jady Tian'
           class='SEAS 2021'
-          position='Treasurer'
+          position='Co-Treasurer'
         />
         <Member
           href=''
           title=''
-          alt='Keki Takahara'
-          imgsrc={BoardMembers.Keki}
-          name='Keki Takahara'
-          class='Barnard 2020'
-          position='Treasurer'
+          alt='Andrew Huen'
+          imgsrc={BoardMembers.Andrew}
+          name='Andrew Huen'
+          class='CC 2021'
+          position='Co-Treasurer'
         />
         <Member
           href=''
           title=''
-          alt='Ling Groccia'
-          imgsrc={BoardMembers.Ling}
-          name='Ling Groccia'
-          class='Barnard 2021'
-          position='Secretary'
+          alt='Shannon Hui'
+          imgsrc={BoardMembers.Shannon}
+          name='Shannon Hui'
+          class='Barnard 2022'
+          position='Co-Opening Ceremony Chair'
         />
+        <Member
+          href=''
+          title=''
+          alt='Sydnie Ito'
+          imgsrc={BoardMembers.Sydnie}
+          name='Sydnie Ito'
+          class='CC 2022'
+          position='Co-Opening Ceremony Chair'
+        />
+        <Member
+          href=''
+          title=''
+          alt='Sophia Jao'
+          imgsrc={BoardMembers.Sophia}
+          name='Sophia Jao'
+          class='Barnard 2022'
+          position='Marketing Chair'
+        />
+        <Member
+          href=''
+          title=''
+          alt='Janice Ng'
+          imgsrc={BoardMembers.Janice}
+          name='Janice Ng'
+          class='CC 2022'
+          position='Design Chair'
+        />
+        <Member
+          href=''
+          title=''
+          alt='Isaac Quiles'
+          imgsrc={BoardMembers.Isaac}
+          name='Isaac Quiles'
+          class='CC 2022'
+          position='Social Chair'
+        />
+        <Member
+          href=''
+          title=''
+          alt='James Xu'
+          imgsrc={BoardMembers.James}
+          name='James Xu'
+          class='SEAS 2021'
+          position='Webmaster'
+        />
+      </Board>
+       <Board
+        className='senioradvisors'
+        teamname='Senior Advisors 2020-21'
+        description=''>
         <Member
           href=''
           title=''
@@ -96,16 +137,7 @@ const BoardPage = ({ transition }) => (
           imgsrc={BoardMembers.Claudia}
           name='Claudia Chung'
           class='CC 2021'
-          position='Social Chair'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Mona Villesik'
-          imgsrc={BoardMembers.Mona}
-          name='Mona Villesik'
-          class='Barnard 2021'
-          position='Marketing Chair'
+          position='Senior Advisor'
         />
         <Member
           href=''
@@ -114,221 +146,70 @@ const BoardPage = ({ transition }) => (
           imgsrc={BoardMembers.Yuki}
           name='Yuki Mitsuda'
           class='Barnard 2021'
-          position='Marketing Chair'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Jimin Ko'
-          imgsrc={BoardMembers.Jimin}
-          name='Jimin Ko'
-          class='CC 2019'
-          position='Design Chair'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Erika Inoue'
-          imgsrc={BoardMembers.Erika}
-          name='Erika Inoue'
-          class='Barnard 2018'
           position='Senior Advisor'
         />
         <Member
           href=''
           title=''
-          alt='Ankita Acharya'
-          imgsrc={BoardMembers.Ankita}
-          name='Ankita Acharya'
-          class='Barnard 2018'
+          alt='Tracy Chen'
+          imgsrc={BoardMembers.Tracy}
+          name='Tracy Chen'
+          class='CC 2021'
           position='Senior Advisor'
         />
         <Member
           href=''
           title=''
-          alt='Emily Jin'
-          imgsrc={BoardMembers.Emily}
-          name='Emily Jin'
-          class='SEAS 2019'
-          position='Senior Advisor'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Yilun Ying'
-          imgsrc={BoardMembers.Yilun}
-          name='Yilun Ying'
-          class='CC 2019'
-          position='Senior Advisor'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Ivy Chen'
-          imgsrc={BoardMembers.Ivy}
-          name='Ivy Chen'
-          class='SEAS 2019'
-          position='Senior Advisor'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Haejin Park'
-          imgsrc={BoardMembers.Haejin}
-          name='Haejin Park'
-          class='CC 2019'
-          position='Senior Advisor'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Vincent Gu'
-          imgsrc={BoardMembers.Vincent}
-          name='Vincent Gu'
-          class='GS 2018'
-          position='Senior Advisor'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Albert Zhang'
-          imgsrc={BoardMembers.Albert}
-          name='Albert Zhang'
-          class='CC 2019'
-          position='Senior Advisor'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Alice Hu'
-          imgsrc={BoardMembers.Alice}
-          name='Alice Hu'
-          class='CC 2019'
-          position='Senior Advisor'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Gregory Yap'
-          imgsrc={BoardMembers.Gregory}
-          name='Gregory Yap'
-          class='CC 2019'
-          position='Senior Advisor'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Michelle Lam'
-          imgsrc={BoardMembers.Michelle}
-          name='Michelle Lam'
-          class='GS 2019'
-          position='Senior Advisor'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Liana He'
-          imgsrc={BoardMembers.Liana}
-          name='Liana He'
-          class='SEAS 2019'
-          position='Senior Advisor'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Shinya Kondo'
-          imgsrc={BoardMembers.Shinya}
-          name='Shinya Kondo'
-          class='SEAS 2020'
-          position='Senior Advisor'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Rebecca Wan'
-          imgsrc={BoardMembers.Rebecca}
-          name='Rebecca Wan'
-          class='CC 2020'
-          position='Senior Advisor'
-        />
-        <Member
-          href=''
-          title=''
-          alt='Yi Jun Lim'
-          imgsrc={BoardMembers.Yijun}
-          name='Yi Jun Lim'
-          class='CC 2020'
+          alt='Cheif Joseph Lynch'
+          imgsrc={BoardMembers.Cheif}
+          name='Cheif Joseph Lynch'
+          class='CC 2021'
           position='Senior Advisor'
         />
       </Board>
       <Board
-        className='eventchair'
-        teamname='Event Chairs 2018-2019'
-        description='Each event chair spearheads his/her own event! From political panels to art exhibitions, from poetryslams to film screenings, each event chair is an integral part of making the month happen.'
-      >
+        className='generalboard'
+        teamname='General Board 2020-21'
+        description=''>
         <Member
           href=''
           title=''
-          imgsrc={BoardMembers.Tracy}
-          name='Tracy Chen'
-          class='CC 2021'
-          position='Event Chair'
+          imgsrc={BoardMembers.Alyssa}
+          name='Alyssa Sales'
+          class='CC 2023'
+          position='General Board'
         />
         <Member
           href=''
           title=''
-          imgsrc={BoardMembers.Andrew}
-          name='Andrew Huen'
-          class='CC 2021'
-          position='Event Chair'
+          imgsrc={BoardMembers.Eric}
+          name='Eric Che'
+          class='CC 2023'
+          position='General Board'
         />
         <Member
           href=''
           title=''
-          imgsrc={BoardMembers.Julia}
-          name='Julia Angkeow'
-          class='CC 2022'
-          position='Event Chair'
+          imgsrc={BoardMembers.Annie}
+          name='Annie Tan'
+          class='CC 2023'
+          position='General Board'
         />
         <Member
           href=''
           title=''
-          imgsrc={BoardMembers.Shannon}
-          name='Shannon Hui'
-          class='Barnard 2022'
-          position='Event Chair'
+          imgsrc={BoardMembers.Karuna}
+          name='Karuna Vikram'
+          class='CC 2023'
+          position='General Board'
         />
         <Member
           href=''
           title=''
-          imgsrc={BoardMembers.Carmen}
-          name='Carmen Cheung'
-          class='GS 2020'
-          position='Event Chair'
-        />
-        <Member
-          href=''
-          title=''
-          imgsrc={BoardMembers.Sumer}
-          name='Sumer Drall'
-          class='GS 2020'
-          position='Event Chair'
-        />
-        <Member
-          href=''
-          title=''
-          imgsrc={BoardMembers.James}
-          name='James Xu'
-          class='SEAS 2021'
-          position='Event Chair'
-        />
-        <Member
-          href=''
-          title=''
-          imgsrc={BoardMembers.Caitlyn}
-          name='Caitlyn Chen'
-          class='SEAS 2022'
-          position='Event Chair'
+          imgsrc={BoardMembers.Sam}
+          name='Sam Azanza'
+          class='Barnard 2021'
+          position='General Board'
         />
       </Board>
       <Footer />
