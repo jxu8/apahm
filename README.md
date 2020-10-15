@@ -37,7 +37,7 @@ Welcome to the website for CU APAHM!
 5. `npm install`
 6. `gatsby develop` - starts a hot-reloading environment accessible at `localhost:8000`
 7. Start editing the pages in `src/pages`. Saved changes will live reload in the browser.
-8. `gatsby build` - creates optimized prod build and static files to `public/`
+8. `gatsby build --prefix-paths` - creates optimized prod build with prefixed paths and static files to `public/`
 9. `gatsby serve` - starts local HTML server for testing build
 
 ---
