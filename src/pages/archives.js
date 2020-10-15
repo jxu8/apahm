@@ -105,8 +105,8 @@ class ArchivePage extends React.Component {
           subtitle=""
           description="Commotion evokes action, noise, and disruption, and we believe that is precisely how pan-Asian identity should be brought out of the periphery into the limelight. Following a string of successful films and the increased attention to Asian-American public figures in recent months, this year APAHM wants to shake up the everyday awareness and expression of pan-Asian culture, identity, and diversity, in all fields and industries. Rather than remain passive, sidelined, and silent, we want to celebrate, to be loud – to cause a commotion."
         >
-          <p><strong>Opening Ceremony</strong>: <strong>Min Jin Lee</strong>is the award-winning author of National Book Award finalist and winner of the Medici Book Club Prize, Pachinko (2017), as well as national bestseller Free Food for Millionaires (2007).</p>
-          <p><strong>Closing Ceremony</strong>: <strong>Diasporic Representations of Asians + Gender (D.R.A.G.)</strong>featuring Indian performing artist Alok Vaid-Menon and drag queen Yuhua Hamasaki, who performed on the tenth season of RuPaul’s Drag Race. </p>
+          <p><strong>Opening Ceremony</strong>: <strong> Min Jin Lee</strong> is the award-winning author of National Book Award finalist and winner of the Medici Book Club Prize, Pachinko (2017), as well as national bestseller Free Food for Millionaires (2007).</p>
+          <p><strong>Closing Ceremony</strong>: <strong> Diasporic Representations of Asians + Gender (D.R.A.G.)</strong> featuring Indian performing artist Alok Vaid-Menon and drag queen Yuhua Hamasaki, who performed on the tenth season of RuPaul’s Drag Race. </p>
 
           <p><strong>Board</strong>:</p>
 

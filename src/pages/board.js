@@ -208,7 +208,7 @@ const BoardPage = ({ transition }) => (
           title=''
           imgsrc={BoardMembers.Sam}
           name='Sam Azanza'
-          class='Barnard 2021'
+          class='Barnard 2022'
           position='General Board'
         />
       </Board>
