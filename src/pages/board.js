@@ -10,11 +10,10 @@ import Member from '../components/Member'
 
 // IMPORTANT: must import, otherwise URL error
 import bgimg from '../assets/images/apahm-2018-light.jpg'
-
 const BoardPage = ({ transition }) => (
   <Layout>
     <div style={transition && transition.style}>
-      <AltHeader
+      {/* <AltHeader
         page='board'
         background={'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.13)),url(' + bgimg + ')'}
         pageTitle='Meet the Board'
@@ -331,9 +330,10 @@ const BoardPage = ({ transition }) => (
           position='Event Chair'
         />
       </Board>
-      <Footer />
+      <Footer /> */}
     </div>
   </Layout>
 )
+
 
 export default BoardPage
